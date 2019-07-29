@@ -92,15 +92,14 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: /
-  categories: /categories/
-  #about: /about/
-  archives: /archives/
-  #tags: /tags/
+  home: / || home
+  categories: /categories/ || th
+  about: /about/ || user
+  archives: /archives/ || archive
+  tags: /tags/ || tags
   #sitemap: /sitemap.xml
   #commonweal: /404/
-  #新增menu
-  catalogue: /catalogues/
+
 
 # Enable/Disable menu icons.
 menu_icons:

@@ -1,5 +1,5 @@
 ---
-title: categories
+title: 分类
 date: 2019-07-27 22:51:07
-categories: dotnetcore 实践
+type: categories
 ---
