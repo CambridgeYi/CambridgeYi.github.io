@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="架构,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一）">
+<meta name="keywords" content="架构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="架构之路">
+<meta property="og:url" content="http://yoursite.com/2019/08/13/架构之路-1/index.html">
+<meta property="og:site_name" content="LTO">
+<meta property="og:description" content="模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一）">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-13T10:20:59.606Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="架构之路">
+<meta name="twitter:description" content="模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一）">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/08/13/架构之路-1/">
+
+
+
+
+
+  <title>架构之路 | LTO</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+		<a href="https://github.com/CambridgeYi"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" style="float:right;"></a>
+	</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LTO</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">技术博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/架构之路-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">架构之路</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T18:19:35+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/架构/" itemprop="url" rel="index">
+                    <span itemprop="name">架构</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA5OTAyNzQ2OA==&mid=2649702073&idx=1&sn=6a878cff3064a3d25e831419c7af4d3b&chksm=889301dabfe488ccc03db6e6b3f769868f3bc796d3907cfd1f7890c70ab8f3bc26a8d0c4be5f&mpshare=1&scene=1&srcid=&key=a1f36ea036ec3501370c43ac11fb92d33a2c0afcdbc26de70811855428adcbf0b406f95f52b920e863f8ca0c328843417135fa31afba5e3d269a96d38e55771ea67bf1be8b03bb5db68358e2a65a0947&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=2iuIPktJ3XC8989RyJnOQ2WaGCpoYQWr7ppZpvPPfNAJocWNNxi2pZp3CyPxydcT" target="_blank" rel="noopener"><strong><em>模拟淘宝服务端的高并发分布式架构演进之路</em></strong></a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651962040&idx=1&sn=7af0762e71e05389e752f1c3605078fc&chksm=bd2d0f648a5a8672d9c2b30bafb95262d9890842c0cba10862acb099b9d9e9a6533562de5131&mpshare=1&scene=1&srcid=03156JGdfB4CuMIDLlpFwnOh&key=c718fe662394a76e67fc23f634f185f8b7e732765a84d2839d0a00637cad7aa1080da459076a82146cd193c4a1395a20a83129b59760976271f28ecb5a91a942419d8b0b6bd10fd40f6fe5ac140b891e&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=w44Wv7gcbputzvOXUIN9nMPRuR4dExFw4FucIZ4xR7OH7czHK%2B6BxYEjgkT%2Bh5FS" target="_blank" rel="noopener">==架构师之路18年精选100篇-58沈剑==</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&mid=2651962471&idx=1&sn=cd5796c1c7753ef4a1f8e8494a13d69c&chksm=bd2d09bb8a5a80adc32f2d548d3f9ba00eb4f97b6cd5bd132128c16a6180c94832d074996f06&mpshare=1&scene=1&srcid=0708pbTTp9r0Q16bGkkpVUeD&key=c718fe662394a76ee22796cd144c8dab555c9857a9b3f15b3f8a484cb3d55ef904b342f956bf812a92bb032b4ffd63275f38ba101caf2fa49889886e768fff5156755ab673b1dac066e082ebdf3720e3&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_" target="_blank" rel="noopener">==架构师之路，半年文章精选==</a></li>
+<li><a href="https://idig8.com/2019/02/10/hulianwangjiagouruanjianjiagou-ruanjianxitongshejiyi/?from=%E6%96%87%E7%AB%A0%E9%A1%B5%E5%86%85%E9%93%BE%E6%8E%A5" target="_blank" rel="noopener">『互联网架构』软件架构-软件系统设计（一）</a><a id="more"></a></li>
+<li><a href="https://www.jianshu.com/p/75edcc05acfd?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">单点登录（SSO）看这一篇就够了</a></li>
+<li><a href="https://www.jianshu.com/p/1f2d6e5126cb?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">OAuth2和JWT - 如何设计安全的API？</a></li>
+<li><a href="https://www.jianshu.com/p/243b85771be2?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Oauth2.0详解及安全使用</a></li>
+<li><a href="https://www.jianshu.com/p/d789ea15d060?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">如何设计一个秒杀系统</a></li>
+<li><a href="https://www.jianshu.com/p/ec9ca8087e89?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">监控、日志、APM整个监控体系思考</a></li>
+<li><a href="https://juejin.im/post/5bee22c051882528c4466334?from=%E6%96%87%E7%AB%A0%E9%A1%B5%E5%86%85%E9%93%BE%E6%8E%A5" target="_blank" rel="noopener">这么多监控组件，总有一款适合你</a></li>
+<li><a href="https://www.jianshu.com/p/0555cf4af569?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">每秒上千订单场景下的分布式锁高并发优化实践！</a></li>
+<li><a href="https://www.jianshu.com/c/838a5c304ffa?utm_campaign=hugo&utm_medium=reader_share&utm_content=collection&utm_source=weixin-friends" target="_blank" rel="noopener">互联网系统架构与应用</a></li>
+<li><a href="https://www.jianshu.com/p/9bcb46e18bab?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Web应用系统架构演进过程</a></li>
+<li><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIwNTc3OTAxOA==&scene=123&uin=MzE3NjE2NTk5MA%3D%3D&key=a1f36ea036ec3501a40ca784f06cccc8b0fa422c78fc243b142bf298ce11cc8fa09e53694da7aae88ad1fe07ffd1c3cd77f9991cb4cf36119858fc16742b2c8a75178d8bb153e8a3e7a3c1ede372de67&devicetype=Windows+10&version=62060833&lang=zh_CN&a8scene=1&pass_ticket=Zl2KwbUiLFNYJop%2F2cCNBkC6lY3DbZ%2BkUNKCOw6zTA5UdscsE5xGtIEF0BsyU6m7" target="_blank" rel="noopener">架构师修行之路</a></li>
+<li><a href="https://www.jianshu.com/p/38b3765431de?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">可视化工具Grafana的简介</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA5OTAyNzQ2OA==&mid=2649702254&idx=1&sn=3cd3f7e0a24ae52612fad1bfd78569ec&chksm=8893000dbfe4891b5b2f9312495c23e65dc4de080d60f828448ffb223186542e075f5fc7c703&mpshare=1&scene=1&srcid=&sharer_sharetime=1564101784492&sharer_shareid=4dbcc35f4e4d8e71289ec8e611110adb&key=0a01442925ed28a10a1e5a851b91ec07e616dbec4a00ac71e17233bedc854e64a6a3d0c956d0582d8294cab65799af8afbc6404ff8a56758e1a1d1173e1d6ae4eaf52cb442b59ba5418c7b6125376d1c&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=xHs%2BxxC90eHbJwveH74nVaVi3WDC5CK4JiNiFKNfErid7TjhyNH4BJffksqPFgId" target="_blank" rel="noopener">==为了做到微服务的高可用，鬼知道我出了多少张牌==</a></li>
+<li><a href="https://www.jianshu.com/p/b0454b6e654f?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">ELK实时日志分析平台的搭建部署及使用</a></li>
+<li><a href="https://www.jianshu.com/p/a9d0013ac089?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">使用ELK(Elasticsearch + Logstash + Kibana) 搭建日志集中分析平台实践</a></li>
+<li><a href="https://github.com/toutiaoio/awesome-architecture?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io" target="_blank" rel="noopener">==架构师技术图谱，助你早日成为架构师==</a></li>
+<li><a href="https://www.jianshu.com/p/530228b71888?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">==如何防止订单重复提交以及如何防止订单重复确认==</a></li>
+<li><a href="http://www.54tianzhisheng.cn/2018/04/24/Distributed_lock/" target="_blank" rel="noopener">分布式锁看这篇就够了</a></li>
+<li><a href="https://www.cnblogs.com/rongfengliang/p/9755062.html" target="_blank" rel="noopener">jaeger 使用ElasticSearch 作为后端存储</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU4Mjc4NzgyOQ==&mid=2247484573&idx=1&sn=a524034b74363d446acd9dd1b24c1dc4&chksm=fdb3b307cac43a117fe79f1a5d4472293f55c327f2b74b728cbe88f1477fb8d6dea90eee1447&mpshare=1&scene=1&srcid=&sharer_sharetime=1564483928931&sharer_shareid=4dbcc35f4e4d8e71289ec8e611110adb&key=7393e0b0f5ed79b3e083daa91fd4fb78354457953e9cbf0a5c46c3831d28a2eae5a6541331ba5303a174b8eeb4de1a268f41c6da57b75549563f62abe3e9015b2941d05ee9acf8f50056e4204f96bb1a&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=00F7zUpanC8wAA2IoQJToxWxJ1YS6JcQ%2B1FofcySTCk0a497%2BrsyYlf7OLk0w%2Ff1" target="_blank" rel="noopener">程序员需要知道的缩写和专业名词</a></li>
+<li><a href="https://www.jianshu.com/p/fdfead5acc23" target="_blank" rel="noopener">docker安装ES &amp; Kibana</a></li>
+<li><a href="https://www.cnblogs.com/rongfengliang/p/9755062.html" target="_blank" rel="noopener">==jaeger 使用ElasticSearch 作为后端存储==</a></li>
+<li><a href="https://www.jianshu.com/p/35819be616a9?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">从新手到架构师，一篇就够：从100到1000万高并发的架构演进之路</a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/架构/" rel="tag"># 架构</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/13/公共服务/" rel="next" title="公共服务">
+                <i class="fa fa-chevron-left"></i> 公共服务
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/13/netcore/" rel="prev" title="netcore">
+                netcore <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/v.jpg" alt="liu">
+            
+              <p class="site-author-name" itemprop="name">liu</p>
+              <p class="site-description motion-element" itemprop="description">从现在起,一天一个脚步</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/CambridgeYi" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">liu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

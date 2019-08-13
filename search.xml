@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[netcore]]></title>
+    <url>%2F2019%2F08%2F13%2Fnetcore%2F</url>
+    <content type="text"><![CDATA[文档 .NET Core官网 NuGet官网 ASP.NET Core 中文文档目录 最全的.NET Core跨平台微服务学习资源 ASP.NET Core开发者路线图 issues dotnet 命令 通过 .NET CORE 提供的项目模板，减少重复劳动，提高效率 动手造轮子：基于 Redis 的发布订阅实现 EventBus dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效） 修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号可以修改端口 http响应乱码情况分析 ==编码格式有问题== ==响应数据加密（通过fiddler 可查看是否加密）==,参考C#实现通过Gzip来对数据进行压缩和解压 vs 自动根据xml或json生成类(==xml很实用，自己手写容易出问题==) vs -&gt; 编辑 -&gt; 选择性粘贴 -&gt; 将xml/json粘贴成类 服务器 500 ==直接cmd启动dotnet XXXX.dll,然后访问接口,异常信息会输出到窗口中，端口使用server.urls配置== vs studio 编译/生成事件 参考地址：https://blog.csdn.net/yyhero1/article/details/19272637 LINQ表连接大全 inner join left join right join full join cross join dotnet core 自定义模板创建 参考创建 dotnet new 自定义模板 注意==目前不支持.net core 3.0版本== linq查询必须要==先skip,然后再Take否则第二页开始就取不到数据== Task中的异常处理 task逻辑不能包含async/await,否则异常无法捕获]]></content>
+      <categories>
+        <category>netcore</category>
+      </categories>
+      <tags>
+        <tag>netcore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[架构之路]]></title>
+    <url>%2F2019%2F08%2F13%2F%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF-1%2F</url>
+    <content type="text"><![CDATA[模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一） 单点登录（SSO）看这一篇就够了 OAuth2和JWT - 如何设计安全的API？ Oauth2.0详解及安全使用 如何设计一个秒杀系统 监控、日志、APM整个监控体系思考 这么多监控组件，总有一款适合你 每秒上千订单场景下的分布式锁高并发优化实践！ 互联网系统架构与应用 Web应用系统架构演进过程 架构师修行之路 可视化工具Grafana的简介 ==为了做到微服务的高可用，鬼知道我出了多少张牌== ELK实时日志分析平台的搭建部署及使用 使用ELK(Elasticsearch + Logstash + Kibana) 搭建日志集中分析平台实践 ==架构师技术图谱，助你早日成为架构师== ==如何防止订单重复提交以及如何防止订单重复确认== 分布式锁看这篇就够了 jaeger 使用ElasticSearch 作为后端存储 程序员需要知道的缩写和专业名词 docker安装ES &amp; Kibana ==jaeger 使用ElasticSearch 作为后端存储== 从新手到架构师，一篇就够：从100到1000万高并发的架构演进之路]]></content>
+      <categories>
+        <category>架构</category>
+      </categories>
+      <tags>
+        <tag>架构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[公共服务]]></title>
+    <url>%2F2019%2F08%2F13%2F%E5%85%AC%E5%85%B1%E6%9C%8D%E5%8A%A1%2F</url>
+    <content type="text"><![CDATA[==SMTP服务器就是邮件代收发服务器，由邮件服务商提供，常见的SMTP服务器端口号== QQ邮箱：SMTP服务器地址：smtp.qq.com（端口：587） 雅虎邮箱: SMTP服务器地址：smtp.yahoo.com（端口：587） 163邮箱：SMTP服务器地址：smtp.163.com（端口：25） 126邮箱: SMTP服务器地址：smtp.126.com（端口：25） 新浪邮箱: SMTP服务器地址：smtp.sina.com（端口：25） 国内开源镜像站 centos官方包 最新版本的Linux软件包]]></content>
+      <categories>
+        <category>公共服务</category>
+      </categories>
+      <tags>
+        <tag>公共服务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[goland]]></title>
+    <url>%2F2019%2F08%2F13%2Fgoland%2F</url>
+    <content type="text"><![CDATA[goland激活 https://blog.csdn.net/hi_liuxiansheng/article/details/89078405 goland Terminal 很多情况不起效果,直接使用cmd goland 文件头注释 打开GoLand的setting选项 &gt; Editor &gt;CodeStyle &gt;File and Code Templates &gt;Go File 1234567/* @Time : $&#123;DATE&#125; $&#123;TIME&#125; @Author : $&#123;USER&#125; @File : $&#123;NAME&#125; @Software: $&#123;PRODUCT_NAME&#125; */ package $&#123;GO_PACKAGE_NAME&#125; goland 配置注释后面是否跟一个空格 setting &gt; Editor &gt; Code Style &gt; Go &gt; Other &gt; Add leading space to comments]]></content>
+      <categories>
+        <category>goland</category>
+      </categories>
+      <tags>
+        <tag>goland</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[mysql]]></title>
+    <url>%2F2019%2F08%2F13%2Fmysql%2F</url>
+    <content type="text"><![CDATA[==centos7下安装mysql（完整配置）== MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 ==学会数据库读写分离、分表分库——用Mycat，这一篇就够了！== Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 MyCat集群部署（HAProxy + MyCat） mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 ==Mysql集群方案对比：Replication和PXC== ==Haproxy+PXC搭建Mysql集群==]]></content>
+      <categories>
+        <category>mysql</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[集群搭建]]></title>
+    <url>%2F2019%2F08%2F13%2F%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[HAProxy从零开始到掌握 Haproxy+etcd+confd+Docker搭建节点自动发现的高可用负载均衡框架 ETCD实现技术总结 mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 Docker ELK+Filebeat安装与配置 使用Docker搭建ElasticSearch+Logstash+Kibana环境 Docker + Elasticsearch 集群环境搭建 ==Docker安装ElasticSearch== mysql主从复制(dcoker+mysql) version: 8.0.17 MySQL Community Server - GPL 参考 mysql8.0之caching_sha2_password- [==基于Docker的Mysql主从复制搭建==](https://www.cnblogs.com/songwenjie/p/9371422.html) - [利用 docker 实现 mysql 主从同步/读写分离，附赠 docker 搭建 mycat 读写分离](https://www.jianshu.com/p/0439206e1f28) 命令 CREATE USER ‘slave’@’%’ IDENTIFIED WITH mysql_native_password BY ‘123456’; # 创建账号 GRANT REPLICATION SLAVE, REPLICATION CLIENT ON . TO ‘slave’@’%’;#授予用户 slave REPLICATION SLAVE权限和REPLICATION CLIENT权限 mysql读写分离(docker+mysql+mycat) 参考 Mycat权威指南 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ docker应用-6（mysql+mycat 搭建数据库集群） Mycat安装并实现mysql读写分离,分库分表 Docker安装Mycat并实现mysql读写分离,分库分表 MyCat配置简介]]></content>
+      <categories>
+        <category>集群</category>
+      </categories>
+      <tags>
+        <tag>集群</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[docker]]></title>
+    <url>%2F2019%2F08%2F13%2Fdocker%2F</url>
+    <content type="text"><![CDATA[文档 docker官网 microsoft/aspnetcore dockerfile(主要来源) Using Supervisor with Docker Docker网络模型对比 Docker 常用指令详解 ==通过docker logs命令可以查看容器的日志== docker logs－查看docker容器日志 =实时查看Docker容器占用的CPU，内存状态= 根据官方 Dockerfile配置进行自定义配置 镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==） dockerignore文件 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取dotnetcore镜像(使用国内的仓库daocloud) $ echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker$ sudo systemctl docker restart nginx + consul + docker 参考：https://www.jianshu.com/p/9976e874c099 参考：https://docs.docker-cn.com（官网） 参考：https://www.cnblogs.com/wangjieguang/p/docker-dotnetcore2.html（ms docker+Dockerfile） docker 命令： docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名 docker run -p 4000:80 friendlyname # 运行端口 4000 到 90 的“友好名称”映射 docker run -d -p 4000:80 friendlyname # 内容相同，但在分离模式下 docker ps # 查看所有正在运行的容器的列表 docker stop &lt;hash&gt; # 平稳地停止指定的容器 docker ps -a # 查看所有容器的列表，甚至包含未运行的容器 docker kill &lt;hash&gt; # 强制关闭指定的容器 docker rm &lt;hash&gt; # 从此机器中删除指定的容器 docker rm $(docker ps -a -q) # 从此机器中删除所有容器 docker images -a # 显示此机器上的所有镜像 docker rmi &lt;imagename&gt; # 从此机器中删除指定的镜像 docker rmi $(docker images -q) # 从此机器中删除所有镜像 docker login # 使用您的 Docker 凭证登录此 CLI 会话 docker tag &lt;image&gt; username/repository:tag # 标记 &lt;image&gt; 以上传到镜像库 docker push username/repository:tag # 将已标记的镜像上传到镜像库 docker run username/repository:tag # 运行镜像库中的镜像`]]></content>
+      <categories>
+        <category>docker</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[centos]]></title>
+    <url>%2F2019%2F08%2F13%2Fcentos%2F</url>
+    <content type="text"><![CDATA[htop 描述：linux 监控软件，比top更强大 安装 yum install epel-release -y yum install htop -y centos7 修改yum镜像源 命令 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup #备份 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo yum makecache 参考 linux修改yum源镜像源 【CentOS7】yum安装时出现错误[Errno 14] curl#6 - “Could not resolve host: mirrors.aliyuncs.com; Unknown e的解决办法 docker配置国内阿里云镜像源 如何查看yum 安装的软件路径（不要再忘了）]]></content>
+      <categories>
+        <category>centos</category>
+      </categories>
+      <tags>
+        <tag>centos</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[知识点]]></title>
+    <url>%2F2019%2F08%2F13%2F%E7%9F%A5%E8%AF%86%E7%82%B9%2F</url>
+    <content type="text"><![CDATA[xmind绘制高颜值导图的秘诀，都在这了 开源堡垒机jumpserver搭建 CentOs安装oh my zsh]]></content>
+      <tags>
+        <tag>knowledge</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[csharp学习]]></title>
     <url>%2F2019%2F08%2F13%2Fcsharp%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[==使用Nexus搭建私有Nuget仓库== ling查询sql跟踪 .net framework下如何得到EF查询生成的SQL？ .net core 利用日志查看ef生成的SQL语句 C#中为什么会出现空静态构造方法的写法 NetCore实践篇：分布式监控客户端ZipkinTracer从入门到放弃之路 ASP.NET Core 知多少系列：总体介绍及目录 SkyWalking 分布式追踪系统 .NetCore利用BlockingCollection实现简易消息队列 [C#] const vs. static readonly 从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储 WinDbg分析高内存占用问题 IdentityServer4 知多少 Polly 故障处理（一）： 重试策略 利用Skywalking-netcore监控你的应用性能 使用EasyNetQ组件操作RabbitMQ消息队列服务 .NET中的各种池 .net core项目实战汇总 Topshelf 秒建 Windows 服务 线程安全知多少 ASP.NET 谨用 async/await .NET Core容器化之多容器应用部署@Docker-Compose ==C#.net干货，最全公共帮助类（Common.Utility== C#单例模式的实现和性能对比 一个高性能的.NET序列化库：ZeroFormatter .NET分布式框架 | Orleans 知多少 ASP.NET Core JWT 认证 .NET Core + Consul 服务注册与发现 Orleans解决并发之痛（一）：单线程 00.AutoMapper 之入门指南(Getting Started Guide) C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦 Elasticsearch系列教程(一)：安装 OAuth2.0 知多少 ABP 源码解析 一. ABP启动 .NET:持续进化的统一开发平台 AspNetCore 限流中间件IpRateLimitMiddleware 介绍 AspNetCore 2.2 新特性—HealthCheck AspNetCore 2.2 新特性 – ProblemDetails 从壹开始微服务 [ DDD ] 之一 ║ D3模式设计初探 与 我的计划书 EF Core中避免贫血模型的三种行之有效的方法（翻译） DDD理论学习系列（1）– 通用语言 领域驱动设计到底难在哪？ 为什么DDD是设计微服务的最佳实践 DDD分层架构的三种模式 浅析DDD(领域驱动设计) 为什么DDD是设计微服务的最佳实践 ASP.NET CORE 增加日志到数据库或文件 如何为 .NET Core CLI 启用 TAB 自动补全功能 .NET运行时中的监测和可观测性 长期更新】迈向现代化的 .Net 配置指北 AspNetCore微服务下的网关-Kong(一) .Net Core 环境下构建强大且易用的规则引擎 [搬运] C# 这些年来受欢迎的特性 [周译见] C# 7 中的模范和实践 [翻译]在 .NET Core 中的并发编程 [翻译] 使用ElasticSearch，Kibana，ASP.NET Core和Docker可视化数据 .Net 4.X 提前用上 .Net Core 的配置模式以及热重载配置 [搬运]在C#使用.NET 设计模式的新观点 [搬运]在C#使用.NET 设计模式的新观点 在容器中利用Nginx-proxy实现多域名的自动反向代理、免费SSL证书 .NET Core开源组件:后台任务利器之Hangfire C# 中使用面向切面编程（AOP）中实践代码整洁 .NET Core + Consul 服务注册与发现 .Netcore 2.0 Ocelot Api网关教程（4）- 服务发现 收集一些优秀的DoNet开源项目 ==C# EF 批量操作== .NET 反编译调试神器：dnSpy了解一下 基于 EntityFramework 生成Repository模式代码 [翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志 ==VS扩展插件-CodeMaid整洁你的代码== 多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？ (译)构建Async同步基元，Part 6 AsyncLock ==（译）关于async与await的FAQ== ASP.NET Core使用Jaeger实现分布式追踪 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM 高性能微服务网关.NETCore客户端Kong.Net开源发布 ==Asp.NETCore让FromServices回来-属性注入== 随笔分类 - .netcore ASP.NET Core官网 当前标签: surging-dotnet微服务系列 netcore+mysql+nginx+redis系列 .NET Core 迁移躺坑记 ==一个超轻量级工作流引擎：Workflow-Core== 基于DDD的微服务设计和开发实战 ==.NET Core微服务系列基础文章索引（目录导航）== ASP.NET Core 基础知识(十二)【Host之通用主机】 .net core 网站如何附加到进程 C#中关于增强和丰富类功能的几种方式]]></content>
