@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[csharp学习]]></title>
+    <url>%2F2019%2F08%2F13%2Fcsharp%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[==使用Nexus搭建私有Nuget仓库== ling查询sql跟踪 .net framework下如何得到EF查询生成的SQL？ .net core 利用日志查看ef生成的SQL语句 C#中为什么会出现空静态构造方法的写法 NetCore实践篇：分布式监控客户端ZipkinTracer从入门到放弃之路 ASP.NET Core 知多少系列：总体介绍及目录 SkyWalking 分布式追踪系统 .NetCore利用BlockingCollection实现简易消息队列 [C#] const vs. static readonly 从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储 WinDbg分析高内存占用问题 IdentityServer4 知多少 Polly 故障处理（一）： 重试策略 利用Skywalking-netcore监控你的应用性能 使用EasyNetQ组件操作RabbitMQ消息队列服务 .NET中的各种池 .net core项目实战汇总 Topshelf 秒建 Windows 服务 线程安全知多少 ASP.NET 谨用 async/await .NET Core容器化之多容器应用部署@Docker-Compose ==C#.net干货，最全公共帮助类（Common.Utility== C#单例模式的实现和性能对比 一个高性能的.NET序列化库：ZeroFormatter .NET分布式框架 | Orleans 知多少 ASP.NET Core JWT 认证 .NET Core + Consul 服务注册与发现 Orleans解决并发之痛（一）：单线程 00.AutoMapper 之入门指南(Getting Started Guide) C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦 Elasticsearch系列教程(一)：安装 OAuth2.0 知多少 ABP 源码解析 一. ABP启动 .NET:持续进化的统一开发平台 AspNetCore 限流中间件IpRateLimitMiddleware 介绍 AspNetCore 2.2 新特性—HealthCheck AspNetCore 2.2 新特性 – ProblemDetails 从壹开始微服务 [ DDD ] 之一 ║ D3模式设计初探 与 我的计划书 EF Core中避免贫血模型的三种行之有效的方法（翻译） DDD理论学习系列（1）– 通用语言 领域驱动设计到底难在哪？ 为什么DDD是设计微服务的最佳实践 DDD分层架构的三种模式 浅析DDD(领域驱动设计) 为什么DDD是设计微服务的最佳实践 ASP.NET CORE 增加日志到数据库或文件 如何为 .NET Core CLI 启用 TAB 自动补全功能 .NET运行时中的监测和可观测性 长期更新】迈向现代化的 .Net 配置指北 AspNetCore微服务下的网关-Kong(一) .Net Core 环境下构建强大且易用的规则引擎 [搬运] C# 这些年来受欢迎的特性 [周译见] C# 7 中的模范和实践 [翻译]在 .NET Core 中的并发编程 [翻译] 使用ElasticSearch，Kibana，ASP.NET Core和Docker可视化数据 .Net 4.X 提前用上 .Net Core 的配置模式以及热重载配置 [搬运]在C#使用.NET 设计模式的新观点 [搬运]在C#使用.NET 设计模式的新观点 在容器中利用Nginx-proxy实现多域名的自动反向代理、免费SSL证书 .NET Core开源组件:后台任务利器之Hangfire C# 中使用面向切面编程（AOP）中实践代码整洁 .NET Core + Consul 服务注册与发现 .Netcore 2.0 Ocelot Api网关教程（4）- 服务发现 收集一些优秀的DoNet开源项目 ==C# EF 批量操作== .NET 反编译调试神器：dnSpy了解一下 基于 EntityFramework 生成Repository模式代码 [翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志 ==VS扩展插件-CodeMaid整洁你的代码== 多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？ (译)构建Async同步基元，Part 6 AsyncLock ==（译）关于async与await的FAQ== ASP.NET Core使用Jaeger实现分布式追踪 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM 高性能微服务网关.NETCore客户端Kong.Net开源发布 ==Asp.NETCore让FromServices回来-属性注入== 随笔分类 - .netcore ASP.NET Core官网 当前标签: surging-dotnet微服务系列 netcore+mysql+nginx+redis系列 .NET Core 迁移躺坑记 ==一个超轻量级工作流引擎：Workflow-Core== 基于DDD的微服务设计和开发实战 ==.NET Core微服务系列基础文章索引（目录导航）== ASP.NET Core 基础知识(十二)【Host之通用主机】 .net core 网站如何附加到进程 C#中关于增强和丰富类功能的几种方式]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[kafka学习]]></title>
+    <url>%2F2019%2F08%2F13%2Fkafka%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[docker下安装kafka和kafka-manager]]></content>
+      <categories>
+        <category>kafka</category>
+      </categories>
+      <tags>
+        <tag>kafka</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[netcore学习]]></title>
+    <url>%2F2019%2F08%2F13%2Fnetcore%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[==Linux系统常用监控工具== ==ENode 2.8 最新架构图简介== ASP.NET Core知多少（12）：中断请求了解一下 ==响应式编程知多少 | Rx.NET 了解下== MediatR 知多少 ASP.NET Core中GetService（）和GetRequiredService（）之间的区别 译 | .NET Core 3.0 对诊断的改进 ==使用 MiniProfiler 分析 ASP.NET Core 应用== Dapper的正确使用姿势 基于.net core微服务(Consul,Ocelot,Docker,App.Metrics+、Exceptionless+ 分享一个.NET平台开源免费跨平台的大数据分析框架.NET for Apache Spark 从ASP.NET Core2.2到3.0你可能会遇到这些问题 10个小技巧助您写出高性能的ASP.NET Core代码 一个.NET Core开发者的Linux入门学习笔记 ASP.NET Core依赖注入——依赖注入最佳实践 .NET Core中的一个接口多种实现的依赖注入与动态选择看这篇就够了 ASP.NET Core Web API 版本控制了解一下吧 Asp.Net Core 轻松学-多线程之Task快速上手 TransactionScope事务处理方法介绍及.NET Core中的注意事项 ASP.NET Core中使用MediatR实现命令和中介者模式 Asp.Net Core 轻松学-在.Net Core 使用缓存和配置依赖策略 ==通俗易懂，C#如何安全、高效地玩转任何种类的内存之Memory(三)== ==C# 中的新增功能== Visual Studio模板代码注释小技巧分享 ASP.NET Core Razor页面 vs MVC netcore搭建追踪系统 全链路监控Jaeger搭建实战 通过 Jaeger 上报 .NET 应用数据 ==opentracing-contrib/csharp-netcore== 使用 Jaeger 追蹤 ASP.NET Core 呼叫 ==.NET Core 上使用 Jaeger 追蹤 gRPC 呼叫== 使用 Jaeger 追蹤 ASP.NET Core 中的 class 呼叫 vs IDE插件 Open Command Line CodeMaid ==101 LINQ Samples== 微软官方示例代码 netcore强制使用https，把所有的HTTP请求转换为HTTPS 从壹开始前后端分离 [.netCore 填坑 ] 三十二║ 四种方法快速实现项目的半自动化搭建 动软代码生成器 T4 模板 EFCore many-to-many 的CRUD ==基于.NET CORE微服务框架 -谈谈Cache中间件和缓存降级系列== ==Awesome .NET Core== ==Pipelines - .NET中的新IO API指引(一)==]]></content>
+      <categories>
+        <category>ASP.NET Core</category>
+      </categories>
+      <tags>
+        <tag>ASP.NET Core</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[github第三方库]]></title>
+    <url>%2F2019%2F08%2F13%2Fgithub%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[github+hexo 自建个人博客 使用 Hexo+GitHub 搭建个人免费博客教程（小白向） Hexo-Next-主题优化(一) hexo 多终端同步博客 Hexo + yilia 搭建博客可能会遇到的所有疑问 使用Hexo+Next主题搭建自己的个人博客 Hexo中添加本地文件下载 快速、简洁且高效的博客框架 问题 bash: hexo: command not found 建议在系统变量中的path中添加。然后需要关闭Git Bash窗口，重新打开即可，记住，一定要关闭，并重新打开命令窗口，否则配置不会生效 d C github description Nito.AsyncEx A helper library for the Task-Based Asynchronous Pattern (TAP). Npoi.Mapper Use this tool to import or export data with Excel file. The tool is a convention based mapper between strong typed object and Excel data via NPOI. ASP.NET Core开发者指南 作为 ASP.NET Core 开发者，我接下来应该学习什么 Swashbuckle.AspNetCore Swagger tools for documenting API’s built on ASP.NET Core Microsoft.Extensions.Logging.Log4Net.AspNetCore Allows to configure Log4net as Microsoft Extensions Logging handler on any ASP.NET Core application WebApiClient.JIT An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously. PuppeteerSharp Headless Chrome .NET API https://www.puppeteersharp.com AutoMapper Autofac is an addictive Inversion of Control container for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more. Polly Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner. From version 6.0.1, Polly targets .NET Standard 1.1 and 2.0+. RabbitMQ.Client The RabbitMQ .NET client is an implementation of an AMQP 0-9-1 client library for C# (and, implicitly, other .NET languages). WebApiClient.JIT An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously. AngleSharp The ultimate angle brackets parser library parsing HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specifications GO|github|description||:——|:—–:||gin|Gin is a HTTP web framework written in Go (Golang). ||gorm|The fantastic ORM library for Golang||swag|Automatically generate RESTful API documentation with Swagger 2.0 for Go.|||||||||||||||||||||||||||||||||||||||| Linux|github|description||:——|:—–:||oh-my-zsh|A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration|]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>github 第三库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[download]]></title>
+    <url>%2F2019%2F08%2F13%2Fdownload%2F</url>
+    <content type="text"><![CDATA[linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell-dotnet发布脚本 jmeter-性能测试]]></content>
+      <tags>
+        <tag>download</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[powershell学习.md]]></title>
+    <url>%2F2019%2F07%2F30%2Fpowershell%E5%AD%A6%E4%B9%A0-md%2F</url>
+    <content type="text"><![CDATA[Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
+      <categories>
+        <category>powershell</category>
+      </categories>
+      <tags>
+        <tag>powershell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux学习]]></title>
+    <url>%2F2019%2F07%2F29%2Flinux%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[-Linux上，最常用的一批命令解析（10年精选） 100 道 Linux 笔试题，能拿 80 分就算大神 Shell三剑客grep、awk、sed 带你走进脚本世界，ijkplayer之【init-ios.sh】脚本分析 一篇文章学懂Shell脚本 shell 脚本 - 基础知识及变量学习 优雅的Linux&gt;&gt;Shell笔记与探索系列 【linux二三轶事】重定向是啥？文件描述符是啥？]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Google插件]]></title>
+    <url>%2F2019%2F07%2F29%2FGoogle%E6%8F%92%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[uBlock Origin Octotree 划词翻译 OneTab GitZip for github GitZip for github教程 Whatruns]]></content>
+      <categories>
+        <category>google</category>
+        <category>插件</category>
+      </categories>
+      <tags>
+        <tag>google</tag>
+        <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[架构之路]]></title>
+    <url>%2F2019%2F07%2F29%2F%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF%2F</url>
+    <content type="text"><![CDATA[模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一） 单点登录（SSO）看这一篇就够了 OAuth2和JWT - 如何设计安全的API？ Oauth2.0详解及安全使用 如何设计一个秒杀系统 监控、日志、APM整个监控体系思考 这么多监控组件，总有一款适合你 每秒上千订单场景下的分布式锁高并发优化实践！ 互联网系统架构与应用 Web应用系统架构演进过程 架构师修行之路 可视化工具Grafana的简介 ==为了做到微服务的高可用，鬼知道我出了多少张牌== ELK实时日志分析平台的搭建部署及使用 使用ELK(Elasticsearch + Logstash + Kibana) 搭建日志集中分析平台实践 ==架构师技术图谱，助你早日成为架构师==]]></content>
+      <categories>
+        <category>架构师</category>
+        <category>分布式</category>
+      </categories>
+      <tags>
+        <tag>架构</tag>
+        <tag>架构师</tag>
+      </tags>
+  </entry>
+</search>
