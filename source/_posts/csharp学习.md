@@ -20,6 +20,7 @@ categories: C#
 - [IdentityServer4 知多少](https://www.jianshu.com/p/56b577d8f786?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [Polly 故障处理（一）： 重试策略](https://www.jianshu.com/p/7be8cd1152a3?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [利用Skywalking-netcore监控你的应用性能](https://www.jianshu.com/p/3ddd986c7581?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+<!--more-->
 - [使用EasyNetQ组件操作RabbitMQ消息队列服务](https://www.jianshu.com/p/bba32c82565c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [.NET中的各种池](https://www.jianshu.com/p/eb76ee348496?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [.net core项目实战汇总](https://www.jianshu.com/p/7e4fc6b05411?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
