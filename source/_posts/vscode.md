@@ -13,7 +13,7 @@ categories: vscode
 - Vetur
 - Vue VSCode Snippets
 - XML Tools
-- vscode-iconc
+- vscode-icons
 
 <!--more-->
 #### vscode
