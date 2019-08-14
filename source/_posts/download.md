@@ -8,3 +8,4 @@ tags: download
 - [linux-dotnet发布shell脚本](/download/webapi_bak.sh)  
 - [powershell-dotnet发布脚本](/download/webapi_publish_60.ps1)  
 - [jmeter-性能测试](/download/webapi.jmx)
+- [vs.gitignore排除文件](/download/.gitignore)
