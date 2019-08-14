@@ -6,6 +6,7 @@ tags:
 categories:
  - powershell
 ---
+#### powershell
 - [Powershell快速入门（一） 安装和使用](https://www.jianshu.com/p/c8f5c374466a?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [Windows 终端美化，改造 PowerShell 的外观](https://www.jianshu.com/p/e4d71022ee48?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由](https://www.jianshu.com/p/931ae4c34120?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)

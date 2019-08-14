@@ -4,18 +4,19 @@ date: 2019-08-13 21:10:36
 tags: vscode
 categories: vscode
 ---
-- 插件  
-    - Debugger for Chrome
-    - Docker
-    - JavaScript (ES6) code snippets
-    - PowerShell
-    - shell-format
-    - Vetur
-    - Vue VSCode Snippets
-    - XML Tools
+#### 常用插件  
+- Debugger for Chrome
+- Docker
+- JavaScript (ES6) code snippets
+- PowerShell
+- shell-format
+- Vetur
+- Vue VSCode Snippets
+- XML Tools
+- vscode-iconc
 
 <!--more-->
-
+#### vscode
 - [VSCode安装shell、bash格式化工具](https://www.jianshu.com/p/484e5be21786)
 - 控制台输出  
 >`JavaScript (ES6) code snippets`
@@ -39,4 +40,3 @@ categories: vscode
     ]
 }
 ```
-

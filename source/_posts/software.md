@@ -1,9 +1,10 @@
 ---
 title: software
 date: 2019-08-13 21:22:15
-tags: 软件
-categories: 软件
+tags: 常用软件
+categories: 常用软件
 ---
+#### 常用软件
 - Google Chrome
     > uBlock Origin/Octotree/划词翻译/OneTab
 - 有道云笔记

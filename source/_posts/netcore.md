@@ -4,18 +4,7 @@ date: 2019-08-13 18:21:23
 tags: netcore
 categories: netcore
 ---
-
-- 文档
-    - [.NET Core官网](https://docs.microsoft.com/zh-cn/dotnet/core/)
-    - [NuGet官网](https://docs.microsoft.com/zh-cn/nuget/what-is-nuget)
-    - [ASP.NET Core 中文文档目录](https://www.cnblogs.com/dotNETCoreSG/p/aspnetcore-index.html)
-    - [最全的.NET Core跨平台微服务学习资源](https://www.cnblogs.com/jackyfei/p/9955108.html)
-    - [ASP.NET Core开发者路线图](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap/blob/master/ReadMe.zh-Hans.md)
-    - [issues](https://github.com/aspnet/AspNetCore/issues)
-    - [dotnet 命令](https://docs.microsoft.com/zh-cn/dotnet/core/tools/dotnet?tabs=netcore21)
-    - [通过 .NET CORE 提供的项目模板，减少重复劳动，提高效率](https://www.jianshu.com/p/180365ab2107?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-    - [动手造轮子：基于 Redis 的发布订阅实现 EventBus](https://www.jianshu.com/p/fd6732fcee37?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-<!--more-->
+#### DotNet.Core
 - dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）
 > 修改端口可以通过添加参数 --server.urls即dotnet xx.dll --server.urls=http://*.端口号
 可以修改端口
@@ -45,3 +34,14 @@ categories: netcore
 
 - Task中的异常处理
     -  task逻辑不能包含async/await,否则异常无法捕获
+
+#### 参考
+- [.NET Core官网](https://docs.microsoft.com/zh-cn/dotnet/core/)
+- [NuGet官网](https://docs.microsoft.com/zh-cn/nuget/what-is-nuget)
+- [ASP.NET Core 中文文档目录](https://www.cnblogs.com/dotNETCoreSG/p/aspnetcore-index.html)
+- [最全的.NET Core跨平台微服务学习资源](https://www.cnblogs.com/jackyfei/p/9955108.html)
+- [ASP.NET Core开发者路线图](https://github.com/MoienTajik/AspNetCore-Developer-Roadmap/blob/master/ReadMe.zh-Hans.md)
+- [issues](https://github.com/aspnet/AspNetCore/issues)
+- [dotnet 命令](https://docs.microsoft.com/zh-cn/dotnet/core/tools/dotnet?tabs=netcore21)
+- [通过 .NET CORE 提供的项目模板，减少重复劳动，提高效率](https://www.jianshu.com/p/180365ab2107?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [动手造轮子：基于 Redis 的发布订阅实现 EventBus](https://www.jianshu.com/p/fd6732fcee37?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)

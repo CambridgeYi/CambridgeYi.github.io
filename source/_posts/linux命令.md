@@ -4,6 +4,7 @@ date: 2019-08-13 21:12:04
 tags: linux
 categories: linux
 ---
+#### linux常用命令
 1. 修改文件所属的组
     > ==chgrp -R 用户组名 文件名==
 1. 修改文件所有者

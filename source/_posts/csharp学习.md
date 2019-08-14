@@ -4,40 +4,48 @@ date: 2019-08-13 17:01:40
 tags: C#
 categories: C#
 ---
-
-- [==使用Nexus搭建私有Nuget仓库==](https://www.cnblogs.com/Erik_Xu/p/9211471.html)
-- ling查询sql跟踪
-    - [.net framework下如何得到EF查询生成的SQL？](https://www.cnblogs.com/chengxiaohui/articles/2091942.html)
-    - [~.net core 利用日志查看ef生成的SQL语句~](https://www.cnblogs.com/fancyblogs/p/10535214.html)
+#### nuget库
+- [***使用Nexus搭建私有Nuget仓库***](https://www.cnblogs.com/Erik_Xu/p/9211471.html)
+#### linq
+- [.net framework下如何得到EF查询生成的SQL？](https://www.cnblogs.com/chengxiaohui/articles/2091942.html)
+#### C#语法
 - [C#中为什么会出现空静态构造方法的写法](https://www.jianshu.com/p/5d9656637ca0?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [NetCore实践篇：分布式监控客户端ZipkinTracer从入门到放弃之路](https://www.cnblogs.com/fancunwei/p/9637247.html)
-- [ASP.NET Core 知多少系列：总体介绍及目录](https://www.jianshu.com/p/a30fbf5b8a96)
-- [SkyWalking 分布式追踪系统](https://www.jianshu.com/p/2fd56627a3cf?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [.NetCore利用BlockingCollection实现简易消息队列](https://www.jianshu.com/p/5c0cd3424574?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [[C#] const vs. static readonly](https://www.jianshu.com/p/62578c8faa52?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储](https://www.jianshu.com/p/260f41612a8c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [WinDbg分析高内存占用问题](https://www.jianshu.com/p/af2fcbc35331?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [IdentityServer4 知多少](https://www.jianshu.com/p/56b577d8f786?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [Polly 故障处理（一）： 重试策略](https://www.jianshu.com/p/7be8cd1152a3?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [利用Skywalking-netcore监控你的应用性能](https://www.jianshu.com/p/3ddd986c7581?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-<!--more-->
-- [使用EasyNetQ组件操作RabbitMQ消息队列服务](https://www.jianshu.com/p/bba32c82565c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [.NET中的各种池](https://www.jianshu.com/p/eb76ee348496?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [.net core项目实战汇总](https://www.jianshu.com/p/7e4fc6b05411?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [Topshelf 秒建 Windows 服务](https://www.jianshu.com/p/f2365e7b439c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [线程安全知多少](https://www.jianshu.com/p/a1dda5c0ae78?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [***C#.net干货，最全公共帮助类***](https://www.jianshu.com/p/71c5d555ae2d?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+#### ASP.NET Core
+- [ASP.NET Core 知多少系列：总体介绍及目录](https://www.jianshu.com/p/a30fbf5b8a96)
 - [ASP.NET 谨用 async/await](https://www.jianshu.com/p/33fe0b5f19c1?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [.NET Core容器化之多容器应用部署@Docker-Compose](https://www.jianshu.com/p/1cf84a27de0f?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [==C#.net干货，最全公共帮助类（Common.Utility==](https://www.jianshu.com/p/71c5d555ae2d?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [C#单例模式的实现和性能对比](https://www.jianshu.com/p/3ae1bd656c1f?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [一个高性能的.NET序列化库：ZeroFormatter](https://www.jianshu.com/p/87aa4277e515?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [.NET分布式框架 | Orleans 知多少](https://www.jianshu.com/p/116da07c8469?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [ASP.NET Core JWT 认证](https://www.jianshu.com/p/be936f1fba95?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+#### .NET Core
+- [.NetCore利用BlockingCollection实现简易消息队列](https://www.jianshu.com/p/5c0cd3424574?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储](https://www.jianshu.com/p/260f41612a8c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [利用Skywalking-netcore监控你的应用性能](https://www.jianshu.com/p/3ddd986c7581?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [.NET分布式框架 | Orleans 知多少](https://www.jianshu.com/p/116da07c8469?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+---
+#### IdentityServer
+- [IdentityServer4 知多少](https://www.jianshu.com/p/56b577d8f786?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [.net core项目实战汇总](https://www.jianshu.com/p/7e4fc6b05411?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+#### 第三方库
+- [Polly 故障处理（一）： 重试策略](https://www.jianshu.com/p/7be8cd1152a3?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [一个高性能的.NET序列化库：ZeroFormatter](https://www.jianshu.com/p/87aa4277e515?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [***C# EF 批量操作***](https://www.jianshu.com/p/dff3c684a0e4?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [***VS扩展插件-CodeMaid整洁你的代码***](https://www.jianshu.com/p/df7e85f02071?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [***一个超轻量级工作流引擎：Workflow-Core***](https://mp.weixin.qq.com/s?__biz=MzA4NzQzNTg4Ng==&mid=2651729407&idx=1&sn=8e6065851bcf48142047817521694532&chksm=8bc3f2febcb47be89e67da7f07076f71d9c3e7dc7aeb39647c4c1ae907f1f07b7bdda6b20cd8&mpshare=1&scene=1&srcid=&key=e8b343f779d182b959669407da52b93b2a8477e7aa54e7a67127c17147ba6bcc8e161c96317a846326392f9104abd8db1887eea9d123de07575fb7e72c687ac78c6afb0224f9302bc8c7bd4e30633f1b&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=2taP6g9FalzPw0k8J%2Ba4X7JdMqxweFsd5AdpjKIoFQlE6wUpZVdtj3Z11%2BJwZpP%2F)
+<!--more-->
+#### RabbitMQ
+- [使用EasyNetQ组件操作RabbitMQ消息队列服务](https://www.jianshu.com/p/bba32c82565c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+#### 其他
+- [Topshelf 秒建 Windows 服务](https://www.jianshu.com/p/f2365e7b439c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [.NET Core容器化之多容器应用部署@Docker-Compose](https://www.jianshu.com/p/1cf84a27de0f?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+
 - [.NET Core + Consul 服务注册与发现](https://www.jianshu.com/p/4aaaee6e9ce1?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [Orleans解决并发之痛（一）：单线程](https://www.jianshu.com/p/141ea382d242?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [00.AutoMapper 之入门指南(Getting Started Guide)](https://www.jianshu.com/p/29ee5a94c1d9)
 - [C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦](https://www.jianshu.com/p/d3cd461ca922?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [Elasticsearch系列教程(一)：安装](https://www.jianshu.com/p/ae71ca032c15?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+
 - [OAuth2.0 知多少](https://www.jianshu.com/p/a57bda33e992?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [ABP 源码解析 一. ABP启动](https://www.jianshu.com/p/8a25695e3c6c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [.NET:持续进化的统一开发平台](https://www.jianshu.com/p/83261925a531?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
@@ -71,11 +79,11 @@ categories: C#
 - [.NET Core + Consul 服务注册与发现](https://www.jianshu.com/p/4aaaee6e9ce1?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [.Netcore 2.0 Ocelot Api网关教程（4）- 服务发现](https://www.jianshu.com/p/05a1bf2545a0?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [收集一些优秀的DoNet开源项目](https://www.jianshu.com/p/0ba213eba0af?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [==C# EF 批量操作==](https://www.jianshu.com/p/dff3c684a0e4?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+
 - [.NET 反编译调试神器：dnSpy了解一下](https://www.jianshu.com/p/79171da13c99?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [基于 EntityFramework 生成Repository模式代码](https://www.jianshu.com/p/b5b12172c698?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [[翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志](https://www.jianshu.com/p/90741cd9350f?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-- [==VS扩展插件-CodeMaid整洁你的代码==](https://www.jianshu.com/p/df7e85f02071?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+
 - [多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？](https://blog.csdn.net/TonShine/article/details/88601761)
 - [(译)构建Async同步基元，Part 6 AsyncLock](https://blog.csdn.net/weixin_33749131/article/details/85536112)
 - [==（译）关于async与await的FAQ==](https://www.cnblogs.com/heyuquan/archive/2012/11/30/2795859.html)
@@ -88,7 +96,7 @@ categories: C#
 - [当前标签: surging-dotnet微服务系列](https://www.cnblogs.com/fanliang11/tag/surging/)
 - [netcore+mysql+nginx+redis系列](https://www.cnblogs.com/MrHSR/category/1368488.html)
 - [.NET Core 迁移躺坑记](https://www.cnblogs.com/leolaw/p/10740678.html)
-- [==一个超轻量级工作流引擎：Workflow-Core==](https://mp.weixin.qq.com/s?__biz=MzA4NzQzNTg4Ng==&mid=2651729407&idx=1&sn=8e6065851bcf48142047817521694532&chksm=8bc3f2febcb47be89e67da7f07076f71d9c3e7dc7aeb39647c4c1ae907f1f07b7bdda6b20cd8&mpshare=1&scene=1&srcid=&key=e8b343f779d182b959669407da52b93b2a8477e7aa54e7a67127c17147ba6bcc8e161c96317a846326392f9104abd8db1887eea9d123de07575fb7e72c687ac78c6afb0224f9302bc8c7bd4e30633f1b&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=2taP6g9FalzPw0k8J%2Ba4X7JdMqxweFsd5AdpjKIoFQlE6wUpZVdtj3Z11%2BJwZpP%2F)
+
 - [基于DDD的微服务设计和开发实战](https://www.jianshu.com/p/b5abfb3cc0ce?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [==.NET Core微服务系列基础文章索引（目录导航）==](https://mp.weixin.qq.com/s?__biz=MzA4NzQzNTg4Ng==&mid=504245405&idx=1&sn=99b68464d84664b66e5ce3b07d723058&chksm=0bc3f39c3cb47a8aae9b8742dd427b8b75ed31c3c630b2c73bc0393159027362473aa411af75&mpshare=1&scene=1&srcid=&key=e8b343f779d182b92708d0de00ce242338a52e74ca4275080d6dd99582b018f968ce814ad1931b2c8d163b672bd09790bbb631a1d917935478b0fdcc8d7a5098626a26695f2d095bd132c95d13fdde68&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=2taP6g9FalzPw0k8J%2Ba4X7JdMqxweFsd5AdpjKIoFQlE6wUpZVdtj3Z11%2BJwZpP%2F)
 - [ASP.NET Core 基础知识(十二)【Host之通用主机】](https://blog.csdn.net/WuLex/article/details/87625254)

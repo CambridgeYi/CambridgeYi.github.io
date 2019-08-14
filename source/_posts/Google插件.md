@@ -8,10 +8,12 @@ categories:
  - google
  - 插件
 ---
+#### 插件
 - uBlock Origin
 - Octotree
 - 划词翻译
 - OneTab
-- GitZip for github
-    - [GitZip for github教程](http://chromecj.com/web-development/2017-12/863.html)
+- GitZip for github  
 - Whatruns
+#### 参考
+- [GitZip for github教程](http://chromecj.com/web-development/2017-12/863.html)
