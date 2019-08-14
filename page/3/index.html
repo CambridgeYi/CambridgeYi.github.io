@@ -1,0 +1,2328 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="从现在起,一天一个脚步">
+<meta name="keywords" content="aspnetcore netcore C# go">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LTO">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="LTO">
+<meta property="og:description" content="从现在起,一天一个脚步">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LTO">
+<meta name="twitter:description" content="从现在起,一天一个脚步">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/3/">
+
+
+
+
+
+  <title>LTO</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband">
+		<a href="https://github.com/CambridgeYi"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" style="float:right;"></a>
+	</div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LTO</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">技术博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/知识点/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/13/知识点/" itemprop="url">知识点</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T18:05:29+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="xmind"><a href="#xmind" class="headerlink" title="xmind"></a>xmind</h4><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/67568440" target="_blank" rel="noopener">xmind绘制高颜值导图的秘诀，都在这了</a><h4 id="堡垒机"><a href="#堡垒机" class="headerlink" title="堡垒机"></a>堡垒机</h4></li>
+<li><a href="https://www.jianshu.com/p/6ecd85f7d444" target="_blank" rel="noopener">开源堡垒机jumpserver搭建</a><h4 id="常用正则"><a href="#常用正则" class="headerlink" title="常用正则"></a>常用正则</h4></li>
+<li><a href="https://www.jianshu.com/p/e7bb97218946?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">知道这20个正则表达式，能让你少写1,000行代码</a>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/13/知识点/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </li></ul></div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/csharp学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/13/csharp学习/" itemprop="url">csharp学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T17:01:40+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C#</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="nuget库"><a href="#nuget库" class="headerlink" title="nuget库"></a>nuget库</h4><ul>
+<li><a href="https://www.cnblogs.com/Erik_Xu/p/9211471.html" target="_blank" rel="noopener"><strong><em>使用Nexus搭建私有Nuget仓库</em></strong></a><h4 id="linq"><a href="#linq" class="headerlink" title="linq"></a>linq</h4></li>
+<li><a href="https://www.cnblogs.com/chengxiaohui/articles/2091942.html" target="_blank" rel="noopener">.net framework下如何得到EF查询生成的SQL？</a><h4 id="C-语法"><a href="#C-语法" class="headerlink" title="C#语法"></a>C#语法</h4></li>
+<li><a href="https://www.jianshu.com/p/5d9656637ca0?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">C#中为什么会出现空静态构造方法的写法</a></li>
+<li><a href="https://www.jianshu.com/p/62578c8faa52?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">[C#] const vs. static readonly</a></li>
+<li><a href="https://www.jianshu.com/p/af2fcbc35331?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">WinDbg分析高内存占用问题</a></li>
+<li><a href="https://www.jianshu.com/p/eb76ee348496?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">.NET中的各种池</a></li>
+<li><a href="https://www.jianshu.com/p/a1dda5c0ae78?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">线程安全知多少</a></li>
+<li><a href="https://www.jianshu.com/p/71c5d555ae2d?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener"><strong><em>C#.net干货，最全公共帮助类</em></strong></a><h4 id="ASP-NET-Core"><a href="#ASP-NET-Core" class="headerlink" title="ASP.NET Core"></a>ASP.NET Core</h4></li>
+<li><a href="https://www.jianshu.com/p/a30fbf5b8a96" target="_blank" rel="noopener">ASP.NET Core 知多少系列：总体介绍及目录</a></li>
+<li><a href="https://www.jianshu.com/p/33fe0b5f19c1?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">ASP.NET 谨用 async/await</a></li>
+<li><a href="https://www.jianshu.com/p/be936f1fba95?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">ASP.NET Core JWT 认证</a><h4 id="NET-Core"><a href="#NET-Core" class="headerlink" title=".NET Core"></a>.NET Core</h4></li>
+<li><a href="https://www.jianshu.com/p/5c0cd3424574?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">.NetCore利用BlockingCollection实现简易消息队列</a></li>
+<li><a href="https://www.jianshu.com/p/260f41612a8c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储</a></li>
+<li><a href="https://www.jianshu.com/p/3ddd986c7581?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">利用Skywalking-netcore监控你的应用性能</a></li>
+<li><a href="https://www.jianshu.com/p/116da07c8469?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">.NET分布式框架 | Orleans 知多少</a></li>
+</ul>
+<hr>
+<h4 id="IdentityServer"><a href="#IdentityServer" class="headerlink" title="IdentityServer"></a>IdentityServer</h4><ul>
+<li><p><a href="https://www.jianshu.com/p/56b577d8f786?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">IdentityServer4 知多少</a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/7e4fc6b05411?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">.net core项目实战汇总</a></p>
+<h4 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h4></li>
+<li><p><a href="https://www.jianshu.com/p/7be8cd1152a3?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Polly 故障处理（一）： 重试策略</a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/87aa4277e515?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">一个高性能的.NET序列化库：ZeroFormatter</a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/dff3c684a0e4?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener"><strong><em>C# EF 批量操作</em></strong></a></p>
+</li>
+<li><p><a href="https://www.jianshu.com/p/df7e85f02071?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener"><strong><em>VS扩展插件-CodeMaid整洁你的代码</em></strong></a></p>
+</li>
+<li><p><a href="https://mp.weixin.qq.com/s?__biz=MzA4NzQzNTg4Ng==&mid=2651729407&idx=1&sn=8e6065851bcf48142047817521694532&chksm=8bc3f2febcb47be89e67da7f07076f71d9c3e7dc7aeb39647c4c1ae907f1f07b7bdda6b20cd8&mpshare=1&scene=1&srcid=&key=e8b343f779d182b959669407da52b93b2a8477e7aa54e7a67127c17147ba6bcc8e161c96317a846326392f9104abd8db1887eea9d123de07575fb7e72c687ac78c6afb0224f9302bc8c7bd4e30633f1b&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=2taP6g9FalzPw0k8J%2Ba4X7JdMqxweFsd5AdpjKIoFQlE6wUpZVdtj3Z11%2BJwZpP%2F" target="_blank" rel="noopener"><strong><em>一个超轻量级工作流引擎：Workflow-Core</em></strong></a></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/13/csharp学习/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </li></ul></div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/netcore学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/13/netcore学习/" itemprop="url">netcore学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T16:59:05+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ASP-NET-Core/" itemprop="url" rel="index">
+                    <span itemprop="name">ASP.NET Core</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="netcore学习"><a href="#netcore学习" class="headerlink" title="netcore学习"></a>netcore学习</h4><ul>
+<li><a href="https://devblogs.microsoft.com/dotnet/introducing-diagnostics-improvements-in-net-core-3-0/" target="_blank" rel="noopener"><strong><em>Introducing diagnostics improvements in .NET Core 3.0</em></strong></a></li>
+<li><a href="https://www.cnblogs.com/zhouandke/p/11070114.html" target="_blank" rel="noopener">使用dotnet-dump 查找 .net core 3.0 占用CPU 100%的原因</a></li>
+<li><a href="https://www.cnblogs.com/netfocus/p/5401179.html" target="_blank" rel="noopener">==ENode 2.8 最新架构图简介==</a></li>
+<li><a href="https://www.jianshu.com/p/9988f2a27f8d" target="_blank" rel="noopener">ASP.NET Core知多少（12）：中断请求了解一下</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU4Mjc4NzgyOQ==&mid=2247484538&idx=1&sn=b19fc99f742d1e99f179d209ac6bedd7&chksm=fdb3b3e0cac43af6a63430f89ee72fa14f1df9ff6b1f511b309d1a1e6da122a5129261330f97&mpshare=1&scene=1&srcid=&key=fe048f5ad4fa1bcf83858171d563d1bc126cc7493d07aca2b801f970b68462282595107af5b1a9b0a94358eea6e7acb81e8e9138776e87f3effdb6e758def876da48c82e01c0ef298a7723c6babb5d1d&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=AzZb101TeODGUmp69Es8otwADNof806OuHAvt8MulHpa%2BcPqtd%2B5V36UE7yj5CYa" target="_blank" rel="noopener">==响应式编程知多少 | Rx.NET 了解下==</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU4Mjc4NzgyOQ==&mid=2247484540&idx=1&sn=7827b6183ccfe0d84c5fd5ec60962358&chksm=fdb3b3e6cac43af040bba1d748ac12968a9de27f1302fb2a0a244d849465664fe48271e6ecaa&mpshare=1&scene=1&srcid=&key=fe048f5ad4fa1bcf03b5499430bd441fcd48d0e8bf4c684315d9ac3f6fb7e4bbd04ec65ab397c25a4c736979af52688cbfbb33585e857f4530c8e5e6f16b6bcb57794567414d1b6f3f7edfa913669746&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=AzZb101TeODGUmp69Es8otwADNof806OuHAvt8MulHpa%2BcPqtd%2B5V36UE7yj5CYa" target="_blank" rel="noopener">MediatR 知多少</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU4Mjc4NzgyOQ==&mid=2247484525&idx=1&sn=1789ab99687e2c731c516d4d85facd52&chksm=fdb3b3f7cac43ae1eee2e297d164c83c991ca9c6edd2345f5f573907a451ddb324d94bbb6f8b&mpshare=1&scene=1&srcid=&key=0a01442925ed28a18705696ad6ce7993111364391077e43afa32c8ed2a42c577fb0d0e7e50743c3bad279077f10e7c3835868d9d42808e48575aa28011037e1dc7e22f5feb158711d43c2ffbb6cabf60&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=AzZb101TeODGUmp69Es8otwADNof806OuHAvt8MulHpa%2BcPqtd%2B5V36UE7yj5CYa" target="_blank" rel="noopener">ASP.NET Core中GetService（）和GetRequiredService（）之间的区别</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU4Mjc4NzgyOQ==&mid=2247484508&idx=3&sn=15c3112f860c25ab8c62f37e42ac5fe4&chksm=fdb3b3c6cac43ad0eae903433b0244f20dfc1d9a99a0c0820f7dc2d7fef2a11db4d7e9a02b0b&mpshare=1&scene=1&srcid=&key=0a13dcf6c91c3126e08b40bea446ff591982d55525c5bf70a4ca100b36c24c61e0cc373fe5c5808d27f2c39666ff3a7d5aac979afacaa3ede1d40828ae71414aee61a65b253ed0a49a07a1d88b7e5a5f&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=AzZb101TeODGUmp69Es8otwADNof806OuHAvt8MulHpa%2BcPqtd%2B5V36UE7yj5CYa" target="_blank" rel="noopener">译 | .NET Core 3.0 对诊断的改进</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU4Mjc4NzgyOQ==&mid=2247484471&idx=2&sn=876f11f7b76f8186854dfbbd6e791933&chksm=fdb3b3adcac43abbb6ffd7d41cee3074cda80c7ebe935866c28aee74403c6cf1e7d735afedbe&mpshare=1&scene=1&srcid=&key=e8b343f779d182b9ee65c68f3f029de934791c9c8ea20e83722d7f8d8501643189102a3209721259af7b4a7de73767ea5f5300d909245846387d58f8ec16fa36c65ca372e534225b5b9a57180adcf712&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=AzZb101TeODGUmp69Es8otwADNof806OuHAvt8MulHpa%2BcPqtd%2B5V36UE7yj5CYa" target="_blank" rel="noopener">==使用 MiniProfiler 分析 ASP.NET Core 应用==</a>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/13/netcore学习/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </li></ul></div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/github第三方库/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/13/github第三方库/" itemprop="url">github第三方库</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T16:55:09+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/github/" itemprop="url" rel="index">
+                    <span itemprop="name">github</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="C"><a href="#C" class="headerlink" title="C"></a>C</h4><table>
+<thead>
+<tr>
+<th align="left">github</th>
+<th align="center">description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.nuget.org/packages/Nito.AsyncEx" target="_blank" rel="noopener">Nito.AsyncEx</a></td>
+<td align="center">A helper library for the Task-Based Asynchronous Pattern (TAP).</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/donnytian/Npoi.Mapper" target="_blank" rel="noopener">Npoi.Mapper</a></td>
+<td align="center">Use this tool to import or export data with Excel file. The tool is a convention based mapper between strong typed object and Excel data via NPOI.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/dot-nethub/AspNetCore-Developer-Roadmap/blob/master/ReadMe.zh-Hans.md" target="_blank" rel="noopener">ASP.NET Core开发者指南</a></td>
+<td align="center">作为 ASP.NET Core 开发者，我接下来应该学习什么</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore" target="_blank" rel="noopener">Swashbuckle.AspNetCore</a></td>
+<td align="center">Swagger tools for documenting API’s built on ASP.NET Core</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/huorswords/Microsoft.Extensions.Logging.Log4Net.AspNetCore" target="_blank" rel="noopener">Microsoft.Extensions.Logging.Log4Net.AspNetCore</a></td>
+<td align="center">Allows to configure Log4net as Microsoft Extensions Logging handler on any ASP.NET Core application</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/dotnetcore/WebApiClient" target="_blank" rel="noopener">WebApiClient.JIT</a></td>
+<td align="center">An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/kblok/puppeteer-sharp" target="_blank" rel="noopener">PuppeteerSharp</a></td>
+<td align="center">Headless Chrome .NET API <a href="https://www.puppeteersharp.com" target="_blank" rel="noopener">https://www.puppeteersharp.com</a></td>
+</tr>
+<tr>
+<td align="left"><a href="https://autofac.org/" target="_blank" rel="noopener">AutoMapper</a></td>
+<td align="center">Autofac is an addictive Inversion of Control container for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/App-vNext/Polly" target="_blank" rel="noopener">Polly</a></td>
+<td align="center">Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner. From version 6.0.1, Polly targets .NET Standard 1.1 and 2.0+.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.rabbitmq.com/dotnet.html" target="_blank" rel="noopener">RabbitMQ.Client</a></td>
+<td align="center">The RabbitMQ .NET client is an implementation of an AMQP 0-9-1 client library for C# (and, implicitly, other .NET languages).</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/dotnetcore/WebApiClient" target="_blank" rel="noopener">WebApiClient.JIT</a></td>
+<td align="center">An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously.</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/AngleSharp/AngleSharp" target="_blank" rel="noopener">AngleSharp</a></td>
+<td align="center">The ultimate angle brackets parser library parsing HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specifications</td>
+</tr>
+</tbody></table>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/13/github第三方库/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/13/download/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/13/download/" itemprop="url">download</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-13T16:40:52+08:00">
+                2019-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><a href="/download/clear.sh">linux-清理文件shell脚本</a>  </li>
+<li><a href="/download/webapi_bak.sh">linux-dotnet发布shell脚本</a>  </li>
+<li><a href="/download/webapi_publish_60.ps1">powershell-dotnet发布脚本</a>  </li>
+<li><a href="/download/webapi.jmx">jmeter-性能测试</a></li>
+<li><a href="/download/.gitignore">vs.gitignore排除文件</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/powershell/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/30/powershell/" itemprop="url">powershell学习.md</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T17:55:52+08:00">
+                2019-07-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/powershell/" itemprop="url" rel="index">
+                    <span itemprop="name">powershell</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="powershell"><a href="#powershell" class="headerlink" title="powershell"></a>powershell</h4><ul>
+<li><a href="https://www.jianshu.com/p/c8f5c374466a?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Powershell快速入门（一） 安装和使用</a></li>
+<li><a href="https://www.jianshu.com/p/e4d71022ee48?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Windows 终端美化，改造 PowerShell 的外观</a></li>
+<li><a href="https://www.jianshu.com/p/931ae4c34120?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由</a></li>
+<li><a href="https://www.cnblogs.com/DHclly/p/10822804.html" target="_blank" rel="noopener">windows控制台主题美化工具-colortool</a></li>
+<li><a href="https://blog.csdn.net/huwei2003/article/details/45688565" target="_blank" rel="noopener">==windows与Linux间远程拷贝文件-pscp命令==</a></li>
+<li><a href="https://docs.microsoft.com/zh-cn/powershell/scripting/overview?view=powershell-5.0" target="_blank" rel="noopener">PowerShell官网</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/linux学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/29/linux学习/" itemprop="url">linux学习</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T23:02:56+08:00">
+                2019-07-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="linux学习"><a href="#linux学习" class="headerlink" title="linux学习"></a>linux学习</h4><ul>
+<li><a href="https://www.jianshu.com/p/a6b073738352" target="_blank" rel="noopener"><strong><em>Linux系统常用监控工具</em></strong></a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA3OTgyMDcwNg==&mid=2650637393&idx=1&sn=6c2eec9681ffeb1417eb5fef1fa0d7b9&chksm=87a4869cb0d30f8a179eb34b977ab2e8753d681592903c6ae4eef42a64704545615de4c850c3&mpshare=1&scene=1&srcid=&key=f9a007895c9d38fd61285073d535e22cb55dfdf2edbc08ef6c0f1abca7d57410610282dd4e5116e67c57f004baaca11ccf4bfbdf6a00156b1275ae38e9fc4d7d220551d0d04d4c41a9a60fc86b9ce1f4&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=wtBKe4jhzToqq6GH2cJt0XG5ICgoofLKDG1rcw70rcZmE%2FmoHxZQMqlGVn1dwMDD" target="_blank" rel="noopener">Linux上，最常用的一批命令解析（10年精选）</a></li>
+<li><a href="https://www.jianshu.com/p/d02d502052f3?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">100 道 Linux 笔试题，能拿 80 分就算大神</a></li>
+<li><a href="https://www.jianshu.com/p/862d7375aa7c?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Shell三剑客grep、awk、sed</a></li>
+<li><a href="https://www.jianshu.com/p/9b0887596826?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">带你走进脚本世界，ijkplayer之【init-ios.sh】脚本分析</a></li>
+<li><a href="https://www.jianshu.com/p/71cb62f08768?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">一篇文章学懂Shell脚本</a></li>
+<li><a href="https://www.jianshu.com/p/0df0aa68e517?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">shell 脚本 - 基础知识及变量学习</a></li>
+<li><a href="https://www.jianshu.com/nb/13897796?utm_campaign=hugo&utm_medium=reader_share&utm_content=book&utm_source=weixin-friends" target="_blank" rel="noopener">优雅的Linux&gt;&gt;Shell笔记与探索系列</a></li>
+<li><a href="https://www.jianshu.com/p/72b4f6eb4e73?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">【linux二三轶事】重定向是啥？文件描述符是啥？</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/Google插件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/29/Google插件/" itemprop="url">Google插件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T23:01:05+08:00">
+                2019-07-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/google/" itemprop="url" rel="index">
+                    <span itemprop="name">google</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/google/插件/" itemprop="url" rel="index">
+                    <span itemprop="name">插件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><ul>
+<li>uBlock Origin</li>
+<li>Octotree</li>
+<li>划词翻译</li>
+<li>OneTab</li>
+<li>GitZip for github  </li>
+<li>Whatruns<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4></li>
+<li><a href="http://chromecj.com/web-development/2017-12/863.html" target="_blank" rel="noopener">GitZip for github教程</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/架构之路/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/v.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LTO">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/29/架构之路/" itemprop="url">架构之路</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T22:34:05+08:00">
+                2019-07-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/架构师/" itemprop="url" rel="index">
+                    <span itemprop="name">架构师</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/架构师/分布式/" itemprop="url" rel="index">
+                    <span itemprop="name">分布式</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="架构演进"><a href="#架构演进" class="headerlink" title="架构演进"></a>架构演进</h4><ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA5OTAyNzQ2OA==&mid=2649702073&idx=1&sn=6a878cff3064a3d25e831419c7af4d3b&chksm=889301dabfe488ccc03db6e6b3f769868f3bc796d3907cfd1f7890c70ab8f3bc26a8d0c4be5f&mpshare=1&scene=1&srcid=&key=a1f36ea036ec3501370c43ac11fb92d33a2c0afcdbc26de70811855428adcbf0b406f95f52b920e863f8ca0c328843417135fa31afba5e3d269a96d38e55771ea67bf1be8b03bb5db68358e2a65a0947&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=2iuIPktJ3XC8989RyJnOQ2WaGCpoYQWr7ppZpvPPfNAJocWNNxi2pZp3CyPxydcT" target="_blank" rel="noopener"><strong><em>模拟淘宝服务端的高并发分布式架构演进之路</em></strong></a></li>
+<li><a href="https://idig8.com/2019/02/10/hulianwangjiagouruanjianjiagou-ruanjianxitongshejiyi/?from=%E6%96%87%E7%AB%A0%E9%A1%B5%E5%86%85%E9%93%BE%E6%8E%A5" target="_blank" rel="noopener">『互联网架构』软件架构-软件系统设计（一）</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzA5OTAyNzQ2OA==&mid=2649702254&idx=1&sn=3cd3f7e0a24ae52612fad1bfd78569ec&chksm=8893000dbfe4891b5b2f9312495c23e65dc4de080d60f828448ffb223186542e075f5fc7c703&mpshare=1&scene=1&srcid=&sharer_sharetime=1564101784492&sharer_shareid=4dbcc35f4e4d8e71289ec8e611110adb&key=0a01442925ed28a10a1e5a851b91ec07e616dbec4a00ac71e17233bedc854e64a6a3d0c956d0582d8294cab65799af8afbc6404ff8a56758e1a1d1173e1d6ae4eaf52cb442b59ba5418c7b6125376d1c&ascene=1&uin=MzE3NjE2NTk5MA%3D%3D&devicetype=Windows+10&version=62060833&lang=zh_CN&pass_ticket=xHs%2BxxC90eHbJwveH74nVaVi3WDC5CK4JiNiFKNfErid7TjhyNH4BJffksqPFgId" target="_blank" rel="noopener"><strong><em>为了做到微服务的高可用，鬼知道我出了多少张牌</em></strong></a></li>
+<li><a href="https://www.jianshu.com/p/9bcb46e18bab?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Web应用系统架构演进过程</a></li>
+<li><a href="https://github.com/toutiaoio/awesome-architecture?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io" target="_blank" rel="noopener"><strong><em>架构师技术图谱，助你早日成为架构师</em></strong></a></li>
+<li><a href="https://www.jianshu.com/p/35819be616a9?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">从新手到架构师，一篇就够：从100到1000万高并发的架构演进之路</a></li>
+<li><a href="https://www.jianshu.com/c/838a5c304ffa?utm_campaign=hugo&utm_medium=reader_share&utm_content=collection&utm_source=weixin-friends" target="_blank" rel="noopener">互联网系统架构与应用</a>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/07/29/架构之路/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </li></ul></div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/v.jpg" alt="liu">
+            
+              <p class="site-author-name" itemprop="name">liu</p>
+              <p class="site-description motion-element" itemprop="description">从现在起,一天一个脚步</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/CambridgeYi" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">liu</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

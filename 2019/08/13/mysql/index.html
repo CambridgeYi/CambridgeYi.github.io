@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="==centos7下安装mysql（完整配置）== MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 ==学会数据库读写分离、分表分库——用Mycat，这一篇就够了！== Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 MyCat集群部署（HAProxy + MyCat） mycat+haproxy+keepalived搭建高可用负载均衡">
+<meta name="description" content="centos7下安装mysql（完整配置） MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 Mysql集群方案对比：Replication和PXC">
 <meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql">
 <meta property="og:url" content="http://yoursite.com/2019/08/13/mysql/index.html">
 <meta property="og:site_name" content="LTO">
-<meta property="og:description" content="==centos7下安装mysql（完整配置）== MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 ==学会数据库读写分离、分表分库——用Mycat，这一篇就够了！== Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 MyCat集群部署（HAProxy + MyCat） mycat+haproxy+keepalived搭建高可用负载均衡">
+<meta property="og:description" content="centos7下安装mysql（完整配置） MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 Mysql集群方案对比：Replication和PXC">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-13T10:17:30.160Z">
+<meta property="og:updated_time" content="2019-08-14T12:04:15.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql">
-<meta name="twitter:description" content="==centos7下安装mysql（完整配置）== MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 ==学会数据库读写分离、分表分库——用Mycat，这一篇就够了！== Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 MyCat集群部署（HAProxy + MyCat） mycat+haproxy+keepalived搭建高可用负载均衡">
+<meta name="twitter:description" content="centos7下安装mysql（完整配置） MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 Mysql集群方案对比：Replication和PXC">
 
 
 
@@ -387,22 +387,21 @@
 
       
         <ul>
-<li><a href="https://blog.csdn.net/baidu_32872293/article/details/80557668" target="_blank" rel="noopener">==centos7下安装mysql（完整配置）==</a></li>
+<li><a href="https://blog.csdn.net/baidu_32872293/article/details/80557668" target="_blank" rel="noopener"><strong><em>centos7下安装mysql（完整配置）</em></strong></a></li>
 <li><a href="https://www.cnblogs.com/zhangyinhua/p/7550330.html" target="_blank" rel="noopener">MySQL集群（一）之主从复制</a></li>
 <li><a href="https://yq.aliyun.com/articles/334089" target="_blank" rel="noopener">Centos 搭建Mysql-Proxy 读写分离</a></li>
-<li><a href="https://www.jianshu.com/p/2d1a81b2dafc?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">==学会数据库读写分离、分表分库——用Mycat，这一篇就够了！==</a></li>
+<li><a href="https://www.jianshu.com/p/2d1a81b2dafc?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener"><strong><em>学会数据库读写分离、分表分库——用Mycat，这一篇就够了！</em></strong></a></li>
 <li><a href="https://www.jianshu.com/p/2d1a81b2dafc?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Mycat 实现 MySQL 读写分离</a></li>
 <li><a href="https://www.jianshu.com/p/c6e29d724fca?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">MyCat 看了这篇什么都会了</a></li>
-<li><a href="https://www.jianshu.com/p/f4b02609a500?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener"><del>MyCat集群部署（HAProxy + MyCat）</del></a></li>
 <li><a href="https://www.jianshu.com/p/c7c178e29af9?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">mycat+haproxy+keepalived搭建高可用负载均衡mysql集群</a></li>
-<li><a href="https://www.jianshu.com/p/1714898b2234" target="_blank" rel="noopener">==Mysql集群方案对比：Replication和PXC==</a></li>
-<li><a href="https://www.jianshu.com/p/f35b6254c2b0" target="_blank" rel="noopener">==Haproxy+PXC搭建Mysql集群==</a><a id="more"></a></li>
-<li><a href></a></li>
-<li><a href></a></li>
-<li><a href></a></li>
-<li><a href></a></li>
-<li><a href></a></li>
-<li><a href></a></li>
+<li><a href="https://www.jianshu.com/p/1714898b2234" target="_blank" rel="noopener"><strong><em>Mysql集群方案对比：Replication和PXC</em></strong></a></li>
+<li><a href="https://www.jianshu.com/p/f35b6254c2b0" target="_blank" rel="noopener"><strong><em>Haproxy+PXC搭建Mysql集群</em></strong></a><a id="more"></a>
+
+
+
+
+
+</li>
 </ul>
 
       
@@ -516,7 +515,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -527,7 +526,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -538,7 +537,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

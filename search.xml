@@ -1,9 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[supervisor]]></title>
+    <url>%2F2019%2F08%2F14%2Fsupervisor%2F</url>
+    <content type="text"><![CDATA[supervisor安装12yum install python-setuptools easy_install supervisor supervisor守护go,conf文件12345678910111213[program:golang-http-server]command=/home/golang/simple_http_serverautostart=trueautorestart=truestartsecs=10stdout_logfile=/var/log/simple_http_server.logstdout_logfile_maxbytes=1MBstdout_logfile_backups=10stdout_capture_maxbytes=1MBstderr_logfile=/var/log/simple_http_server.logstderr_logfile_maxbytes=1MBstderr_logfile_backups=10stderr_capture_maxbytes=1MB 配置说明: - command：表示运行的命令，填入完整的路径即可 - autostart：表示是否跟随supervisor一起启动。 - autorestart：如果该程序挂了，是否重新启动。 - stdout_logfile：终端标准输出重定向文件。 - stderr_logfile：终端错误输出重定向文件。 参考Linux Supervisor的安装与使用入门]]></content>
+      <tags>
+        <tag>supervisor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo]]></title>
+    <url>%2F2019%2F08%2F14%2Fhexo%2F</url>
+    <content type="text"><![CDATA[hexo 使用 Hexo+GitHub 搭建个人免费博客教程（小白向） Hexo-Next-主题优化(一) hexo 多终端同步博客 Hexo + yilia 搭建博客可能会遇到的所有疑问 使用Hexo+Next主题搭建自己的个人博客 Hexo中添加本地文件下载 快速、简洁且高效的博客框架 ##### Hexo搭建Github Pages博客填坑教程问题 bash: hexo: command not found 建议在系统变量中的path中添加。然后需要关闭Git Bash窗口，重新打开即可，记住，一定要关闭，并重新打开命令窗口，否则配置不会生效]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[分布式]]></title>
+    <url>%2F2019%2F08%2F14%2F%E5%88%86%E5%B8%83%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[分布式环境搭建 Mysql主从同步+读写分离+读负载均衡(docker环境) 主从同步 Replication模式已完成 PXC待做 读写分离 mycat中间件 热备 读负载均衡 es集群环境搭建 jaeger+es环境搭建 redis缓存分布式环境搭建(docker环境) consul服务发现环境搭建(docker环境) zookeeper分布式环境搭建 keepalived分布式环境搭建 mq消息分布式环境搭建 分布式日志系统环境搭建 分布式性能监控环境搭建]]></content>
+      <categories>
+        <category>分布式</category>
+      </categories>
+      <tags>
+        <tag>分布式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git]]></title>
+    <url>%2F2019%2F08%2F14%2Fgit%2F</url>
+    <content type="text"><![CDATA[gitlab分支管理系统(多人协作开发)]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网关]]></title>
+    <url>%2F2019%2F08%2F14%2F%E7%BD%91%E5%85%B3%2F</url>
+    <content type="text"><![CDATA[kong网关 花5分钟时间来了解一下高性能网关Kong会有意外收获]]></content>
+      <categories>
+        <category>网关</category>
+      </categories>
+      <tags>
+        <tag>网关</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[go]]></title>
+    <url>%2F2019%2F08%2F14%2Fgo%2F</url>
+    <content type="text"><![CDATA[注释和生成 godoc注释go linux 发布 打开cmd终端，cd到项目src目录下，执行如下操作,这样在main.go同目录下会生产mai n二进制文件 将main二进制文件上传到服务器(==配置文件也需要上传到服务器上,如yaml,json,ini文件等==) 修改main二进制文件权限chmod -R 777 main ，直接运行之 linux 后台运行: ==nohup ./程序名 &amp;== 命令kill -9 PID(9是信号量，表示强制终止)实现重启1234SET CGO_ENABLED=0SET GOOS=linuxSET GOARCH=amd64go build main.go go install/go get生成可执行文件到$GOPATH/bin下 go如何在window服务器部署 编译成 exe 直接运行 编译成 exe，用 winsw 之类的软件构建 windows 服务运行 使用 ldflags 构建后台运行项目，并编写守护进程 用 windows 的 sc 命令构建服务运行 go依赖包 go依赖包安装 根据==import==，直接到github官网下载源码，然后解压，根据GOPATH直接放到src路径下 替换依赖包(墙) 参考Go modules 从入门到放弃 (go1.11)参考go mod replace 记录 修改go.mod默认依赖项 replace cloud.google.com/go =&gt; github.com/GoogleCloudPlatform/google-cloud-go latest gin/gorm 更新数据 使用First() ,设置值,Save()方式 完成==全量更新==数据 使用Update/Updates方式进行==局部更新==,不能使用该方式进行全量更新,会有部分数据无法更新的问题gorm启动自动迁移(只能创建表,不能修改表结构) db.AutoMigrate(表名) gorm启用sql输出 db.LogMode(true)参考 GORM中文文档 beego作者go入门教程 gorm中文 grpc中文 go常见问题 go提升 Go 开发者路线图 Golang标准库文档 gin web文档]]></content>
+      <categories>
+        <category>go</category>
+      </categories>
+      <tags>
+        <tag>go</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[阿里云]]></title>
+    <url>%2F2019%2F08%2F13%2F%E9%98%BF%E9%87%8C%E4%BA%91%2F</url>
+    <content type="text"><![CDATA[步骤 本地项目测试成功后，编写Dockerfile文件,在linux的docker上运行Dockerfile生成容器 1docker build -t 标签名 . 使用docker images命令查询容器列表,如果没有，直接根据tag运行容器生成镜像 1docker run -d -p 端口：端口 容器tag名称 镜像新名称：版本号 使用docker stop 镜像名停止镜像 登录阿里云平台，通过容器镜像服务生成镜像 使用容器服务通过k8s构建服务 参考 容器服务 容器镜像服务]]></content>
+      <categories>
+        <category>阿里云</category>
+      </categories>
+      <tags>
+        <tag>阿里云</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[software]]></title>
+    <url>%2F2019%2F08%2F13%2Fsoftware%2F</url>
+    <content type="text"><![CDATA[常用软件 Google Chrome uBlock Origin/Octotree/划词翻译/OneTab 有道云笔记 dnSpy.exe C#源码查看工具 Postman jmemer 接口压力测试 HeidiSQL mysql 客户端 MobaXterm windows和linux终端工具（内建SFTP文件传输） vs code NugetPackageExplorer.exe nuget 打包工具 Fiddler notepad ++ 插件JSTool JSONViewer NppMarkdownpanel Git/SourceTree RedisDesktopManger 飞斧/LinSoc 翻墙工具 GoLand Golang IDE PyCharm python IDE clover 资源管理器 supervisor Linux/Unix进程管理工具 Teambition 团队管理工具 nosql客户端 RedisDesktopManager/ ALiCloud 云服务器ECS/域名/负载均衡/CDN/对象存储OSS/API网关/日志服务/容器镜像服务/云数据库POLARDB/容器服务/开放搜索/应用配置管理/对象存储OSS 在线文档管理系统 MinDoc简介 lifei6671/mindoc]]></content>
+      <categories>
+        <category>常用软件</category>
+      </categories>
+      <tags>
+        <tag>常用软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[webpack]]></title>
+    <url>%2F2019%2F08%2F13%2Fwebpack%2F</url>
+    <content type="text"><![CDATA[npm初始化项目1npm init -f # -f表示force的意思，不加这个，npm会让你输入一堆信息，比如name、version之类，如果只是做做实验小demo，直接-f，npm帮你初始化package.json，并填充各种默认值，省事 vue初始化webpack项目1vue init webpack 项目名称 npm安装1npm i 包名称 # i表示安装到当前目录]]></content>
+      <categories>
+        <category>webpack</category>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>webpack</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在线工具]]></title>
+    <url>%2F2019%2F08%2F13%2F%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7%2F</url>
+    <content type="text"><![CDATA[加解密 站长加解密工具接口测试 在线接口测试工具工具集 web工具集(包括正则,格式化，文档等)]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2019%2F08%2F13%2Fpython%2F</url>
+    <content type="text"><![CDATA[python3安装 Linux系统Centos安装Python3.7 wget http://mirror.centos.org/centos/7.6.1810/os/x86_64/Packages/yum-3.4.3-161.el7.centos.noarch.rpm rpm -ivh yum-3.4.3-161.el7.centos.noarch.rpm Install Python 2.7.10 on CentOS/RHEL wget http://mirror.centos.org/centos/7/os/x86_64/Packages/yum-3.4.3-161.el7.centos.noarch.rpm wget http://mirror.centos.org/centos/7/os/x86_64/Packages/yum-metadata-parser-1.1.4-10.el7.x86_64.rpm wget http://mirror.centos.org/centos/7/os/x86_64/Packages/yum-utils-1.1.31-50.el7.noarch.rpm wget http://mirror.centos.org/centos/7/os/x86_64/Packages/yum-updateonboot-1.1.31-50.el7.noarch.rpm wget http://mirror.centos.org/centos/7/os/x86_64/Packages/yum-plugin-fastestmirror-1.1.31-50.el7.noarch.rpm]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux]]></title>
+    <url>%2F2019%2F08%2F13%2Flinux%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[linux常用命令 修改文件所属的组 ==chgrp -R 用户组名 文件名== 修改文件所有者 chown -R 用户名 文件名 ==-R ****表示递归目录及子目录****== linu下添加，删除，修改，查看用户和用户组 gpasswd -a user1 group1 ==将用户user1添加到group1组中（用户可以属于多个组）== mkdir -p ==-p p表示parent 自动创建多级目录== hostnamectl –static set-hostname ==++nname++== ==设置主机机器名== sudo netstat -anp |grep PID或port ==通过进程PID查看端口占用或通过port查看PID== ps -ef |grep port或PID ==查看进程PID或port启动情况== du -sm * |sort -nr ==按照文件夹大小降序显示文件夹列表== centos7:can not resolve host sudo vi /etc/resolv.conf 注释所有内容,添加nameserver 8.8.8.8 重启 reboot 查看端口占用情况lsof -i 端口 查找文件夹及子文件夹文件,接着删除 sudo find ./ -name “*.log” | xargs sudo rm -f 查看文件夹占用情况 du -s /home/api/logs/* |sort -rn ==命令都需要加上sudo，防止出现错误== 除了文件都删除 shopt -s extglob rm -rf !((filename1|filename2)) sudo rm -rf !(appsettings.json|log4net.config|hostsettings.json) 修改文件夹所属用户和用户组 chown -R jay:fefjay a.txt #修改文件所属用户为jay，所属用户组为fefjay chgrp -R jay a.txt 防火墙设置 firewall-cmd –state # 查看防火墙状态systemctl stop/disable firewalld.service # 停止/禁用防火墙 Linux scp命令 scp -r ./ root@10.10.101.96:/home/notify_uat copy -r /xx/app/. /destination和copy -r /xx/app/ /destination区别 没有.会将app文件夹也拷贝,有.则只会拷贝app下内容(不拷贝app文件夹) rm -rf /xx/app/和rm -rf /xx/app/*区别 前者会将app文件夹删除,后者会保留app文件夹 which pwd /whereis pwd 查看命令所在位置]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vscode]]></title>
+    <url>%2F2019%2F08%2F13%2Fvscode%2F</url>
+    <content type="text"><![CDATA[常用插件 Debugger for Chrome Docker JavaScript (ES6) code snippets PowerShell shell-format Vetur Vue VSCode Snippets XML Tools vscode-iconc vscode VSCode安装shell、bash格式化工具 控制台输出 JavaScript (ES6) code snippets chrome 调试 launch.json 配置 123456789101112131415&#123; // 使用 IntelliSense 了解相关属性。 // 悬停以查看现有属性的描述。 // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387 &quot;version&quot;: &quot;0.2.0&quot;, &quot;configurations&quot;: [ &#123; &quot;type&quot;: &quot;chrome&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;name&quot;: &quot;Chrome&quot;, &quot;url&quot;: &quot;http://localhost:8080&quot;, &quot;webRoot&quot;: &quot;$&#123;workspaceFolder&#125;&quot; &#125; ]&#125;]]></content>
+      <categories>
+        <category>vscode</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[netcore]]></title>
     <url>%2F2019%2F08%2F13%2Fnetcore%2F</url>
-    <content type="text"><![CDATA[文档 .NET Core官网 NuGet官网 ASP.NET Core 中文文档目录 最全的.NET Core跨平台微服务学习资源 ASP.NET Core开发者路线图 issues dotnet 命令 通过 .NET CORE 提供的项目模板，减少重复劳动，提高效率 动手造轮子：基于 Redis 的发布订阅实现 EventBus dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效） 修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号可以修改端口 http响应乱码情况分析 ==编码格式有问题== ==响应数据加密（通过fiddler 可查看是否加密）==,参考C#实现通过Gzip来对数据进行压缩和解压 vs 自动根据xml或json生成类(==xml很实用，自己手写容易出问题==) vs -&gt; 编辑 -&gt; 选择性粘贴 -&gt; 将xml/json粘贴成类 服务器 500 ==直接cmd启动dotnet XXXX.dll,然后访问接口,异常信息会输出到窗口中，端口使用server.urls配置== vs studio 编译/生成事件 参考地址：https://blog.csdn.net/yyhero1/article/details/19272637 LINQ表连接大全 inner join left join right join full join cross join dotnet core 自定义模板创建 参考创建 dotnet new 自定义模板 注意==目前不支持.net core 3.0版本== linq查询必须要==先skip,然后再Take否则第二页开始就取不到数据== Task中的异常处理 task逻辑不能包含async/await,否则异常无法捕获]]></content>
+    <content type="text"><![CDATA[DotNet.Core dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效） 修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号可以修改端口 http响应乱码情况分析 ==编码格式有问题== ==响应数据加密（通过fiddler 可查看是否加密）==,参考C#实现通过Gzip来对数据进行压缩和解压 vs 自动根据xml或json生成类(==xml很实用，自己手写容易出问题==) vs -&gt; 编辑 -&gt; 选择性粘贴 -&gt; 将xml/json粘贴成类 服务器 500 ==直接cmd启动dotnet XXXX.dll,然后访问接口,异常信息会输出到窗口中，端口使用server.urls配置== vs studio 编译/生成事件 参考地址：https://blog.csdn.net/yyhero1/article/details/19272637 LINQ表连接大全 inner join left join right join full join cross join dotnet core 自定义模板创建 参考创建 dotnet new 自定义模板 注意==目前不支持.net core 3.0版本== linq查询必须要==先skip,然后再Take否则第二页开始就取不到数据== Task中的异常处理 task逻辑不能包含async/await,否则异常无法捕获 参考 .NET Core官网 NuGet官网 ASP.NET Core 中文文档目录 最全的.NET Core跨平台微服务学习资源 ASP.NET Core开发者路线图 issues dotnet 命令 通过 .NET CORE 提供的项目模板，减少重复劳动，提高效率 动手造轮子：基于 Redis 的发布订阅实现 EventBus]]></content>
       <categories>
         <category>netcore</category>
       </categories>
@@ -12,20 +151,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[架构之路]]></title>
-    <url>%2F2019%2F08%2F13%2F%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF-1%2F</url>
-    <content type="text"><![CDATA[模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一） 单点登录（SSO）看这一篇就够了 OAuth2和JWT - 如何设计安全的API？ Oauth2.0详解及安全使用 如何设计一个秒杀系统 监控、日志、APM整个监控体系思考 这么多监控组件，总有一款适合你 每秒上千订单场景下的分布式锁高并发优化实践！ 互联网系统架构与应用 Web应用系统架构演进过程 架构师修行之路 可视化工具Grafana的简介 ==为了做到微服务的高可用，鬼知道我出了多少张牌== ELK实时日志分析平台的搭建部署及使用 使用ELK(Elasticsearch + Logstash + Kibana) 搭建日志集中分析平台实践 ==架构师技术图谱，助你早日成为架构师== ==如何防止订单重复提交以及如何防止订单重复确认== 分布式锁看这篇就够了 jaeger 使用ElasticSearch 作为后端存储 程序员需要知道的缩写和专业名词 docker安装ES &amp; Kibana ==jaeger 使用ElasticSearch 作为后端存储== 从新手到架构师，一篇就够：从100到1000万高并发的架构演进之路]]></content>
-      <categories>
-        <category>架构</category>
-      </categories>
-      <tags>
-        <tag>架构</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[公共服务]]></title>
     <url>%2F2019%2F08%2F13%2F%E5%85%AC%E5%85%B1%E6%9C%8D%E5%8A%A1%2F</url>
-    <content type="text"><![CDATA[==SMTP服务器就是邮件代收发服务器，由邮件服务商提供，常见的SMTP服务器端口号== QQ邮箱：SMTP服务器地址：smtp.qq.com（端口：587） 雅虎邮箱: SMTP服务器地址：smtp.yahoo.com（端口：587） 163邮箱：SMTP服务器地址：smtp.163.com（端口：25） 126邮箱: SMTP服务器地址：smtp.126.com（端口：25） 新浪邮箱: SMTP服务器地址：smtp.sina.com（端口：25） 国内开源镜像站 centos官方包 最新版本的Linux软件包]]></content>
+    <content type="text"><![CDATA[SMTPSMTP服务器就是邮件代收发服务器，由邮件服务商提供，常见的SMTP服务器端口号 QQ邮箱：SMTP服务器地址：smtp.qq.com（端口：587） 雅虎邮箱: SMTP服务器地址：smtp.yahoo.com（端口：587） 163邮箱：SMTP服务器地址：smtp.163.com（端口：25） 126邮箱: SMTP服务器地址：smtp.126.com（端口：25） 新浪邮箱: SMTP服务器地址：smtp.sina.com（端口：25）国内docker镜像库地址 国内开源镜像站centos镜像官网 centos官方包Linux软件包官网 最新版本的Linux软件包]]></content>
       <categories>
         <category>公共服务</category>
       </categories>
@@ -36,7 +164,7 @@
   <entry>
     <title><![CDATA[goland]]></title>
     <url>%2F2019%2F08%2F13%2Fgoland%2F</url>
-    <content type="text"><![CDATA[goland激活 https://blog.csdn.net/hi_liuxiansheng/article/details/89078405 goland Terminal 很多情况不起效果,直接使用cmd goland 文件头注释 打开GoLand的setting选项 &gt; Editor &gt;CodeStyle &gt;File and Code Templates &gt;Go File 1234567/* @Time : $&#123;DATE&#125; $&#123;TIME&#125; @Author : $&#123;USER&#125; @File : $&#123;NAME&#125; @Software: $&#123;PRODUCT_NAME&#125; */ package $&#123;GO_PACKAGE_NAME&#125; goland 配置注释后面是否跟一个空格 setting &gt; Editor &gt; Code Style &gt; Go &gt; Other &gt; Add leading space to comments]]></content>
+    <content type="text"><![CDATA[goland激活 激活goland Terminal很多情况不起效果,直接使用cmd goland 文件头注释 打开GoLand的setting选项 &gt; Editor &gt;CodeStyle &gt;File and Code Templates &gt;Go File 1234567/* @Time : $&#123;DATE&#125; $&#123;TIME&#125; @Author : $&#123;USER&#125; @File : $&#123;NAME&#125; @Software: $&#123;PRODUCT_NAME&#125; */ package $&#123;GO_PACKAGE_NAME&#125; goland 配置注释后面是否跟一个空格 setting &gt; Editor &gt; Code Style &gt; Go &gt; Other &gt; Add leading space to comments]]></content>
       <categories>
         <category>goland</category>
       </categories>
@@ -47,7 +175,7 @@
   <entry>
     <title><![CDATA[mysql]]></title>
     <url>%2F2019%2F08%2F13%2Fmysql%2F</url>
-    <content type="text"><![CDATA[==centos7下安装mysql（完整配置）== MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 ==学会数据库读写分离、分表分库——用Mycat，这一篇就够了！== Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 MyCat集群部署（HAProxy + MyCat） mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 ==Mysql集群方案对比：Replication和PXC== ==Haproxy+PXC搭建Mysql集群==]]></content>
+    <content type="text"><![CDATA[centos7下安装mysql（完整配置） MySQL集群（一）之主从复制 Centos 搭建Mysql-Proxy 读写分离 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ Mycat 实现 MySQL 读写分离 MyCat 看了这篇什么都会了 mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 Mysql集群方案对比：Replication和PXC Haproxy+PXC搭建Mysql集群]]></content>
       <categories>
         <category>mysql</category>
       </categories>
@@ -58,7 +186,7 @@
   <entry>
     <title><![CDATA[集群搭建]]></title>
     <url>%2F2019%2F08%2F13%2F%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"><![CDATA[HAProxy从零开始到掌握 Haproxy+etcd+confd+Docker搭建节点自动发现的高可用负载均衡框架 ETCD实现技术总结 mycat+haproxy+keepalived搭建高可用负载均衡mysql集群 Docker ELK+Filebeat安装与配置 使用Docker搭建ElasticSearch+Logstash+Kibana环境 Docker + Elasticsearch 集群环境搭建 ==Docker安装ElasticSearch== mysql主从复制(dcoker+mysql) version: 8.0.17 MySQL Community Server - GPL 参考 mysql8.0之caching_sha2_password- [==基于Docker的Mysql主从复制搭建==](https://www.cnblogs.com/songwenjie/p/9371422.html) - [利用 docker 实现 mysql 主从同步/读写分离，附赠 docker 搭建 mycat 读写分离](https://www.jianshu.com/p/0439206e1f28) 命令 CREATE USER ‘slave’@’%’ IDENTIFIED WITH mysql_native_password BY ‘123456’; # 创建账号 GRANT REPLICATION SLAVE, REPLICATION CLIENT ON . TO ‘slave’@’%’;#授予用户 slave REPLICATION SLAVE权限和REPLICATION CLIENT权限 mysql读写分离(docker+mysql+mycat) 参考 Mycat权威指南 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ docker应用-6（mysql+mycat 搭建数据库集群） Mycat安装并实现mysql读写分离,分库分表 Docker安装Mycat并实现mysql读写分离,分库分表 MyCat配置简介]]></content>
+    <content type="text"><![CDATA[HAProxy/etcd/confd HAProxy从零开始到掌握 Haproxy+etcd+confd+Docker搭建节点自动发现的高可用负载均衡框架 ETCD集群 ETCD实现技术总结 mysql/mycat/keepalived/haproxy mycat+haproxy+keepalived搭建高可用负载均衡mysql集群ELK Docker ELK+Filebeat安装与配置ES/Logstash/Kibana 使用Docker搭建ElasticSearch+Logstash+Kibana环境 Docker + Elasticsearch 集群环境搭建 Docker安装ElasticSearch docker安装ES &amp; Kibana Elasticsearch系列教程(一)：安装consul/nginx 基于nginx和consul构建高可用及自动发现的docker服务架构 kafka docker下安装kafka和kafka-managerjaeger/ES jaeger 使用ElasticSearch 作为后端存储 APM/SkyWalking 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM SkyWalking 分布式追踪系统命令1234# mysql创建账号CREATE USER &apos;slave&apos;@&apos;%&apos; IDENTIFIED WITH mysql_native_password BY &apos;123456&apos;; # mysql授予用户 slave REPLICATION SLAVE权限和REPLICATION CLIENT权限GRANT REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO &apos;slave&apos;@&apos;%&apos;; 参考 mysql8.0之caching_sha2_password 基于Docker的Mysql主从复制搭建 利用 docker 实现 mysql 主从同步/读写分离，附赠 docker 搭建 mycat 读写分离 Mycat权威指南 学会数据库读写分离、分表分库——用Mycat，这一篇就够了！ docker应用-6（mysql+mycat 搭建数据库集群） Mycat安装并实现mysql读写分离,分库分表 Docker安装Mycat并实现mysql读写分离,分库分表 MyCat配置简介]]></content>
       <categories>
         <category>集群</category>
       </categories>
@@ -69,7 +197,7 @@
   <entry>
     <title><![CDATA[docker]]></title>
     <url>%2F2019%2F08%2F13%2Fdocker%2F</url>
-    <content type="text"><![CDATA[文档 docker官网 microsoft/aspnetcore dockerfile(主要来源) Using Supervisor with Docker Docker网络模型对比 Docker 常用指令详解 ==通过docker logs命令可以查看容器的日志== docker logs－查看docker容器日志 =实时查看Docker容器占用的CPU，内存状态= 根据官方 Dockerfile配置进行自定义配置 镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==） dockerignore文件 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取dotnetcore镜像(使用国内的仓库daocloud) $ echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker$ sudo systemctl docker restart nginx + consul + docker 参考：https://www.jianshu.com/p/9976e874c099 参考：https://docs.docker-cn.com（官网） 参考：https://www.cnblogs.com/wangjieguang/p/docker-dotnetcore2.html（ms docker+Dockerfile） docker 命令： docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名 docker run -p 4000:80 friendlyname # 运行端口 4000 到 90 的“友好名称”映射 docker run -d -p 4000:80 friendlyname # 内容相同，但在分离模式下 docker ps # 查看所有正在运行的容器的列表 docker stop &lt;hash&gt; # 平稳地停止指定的容器 docker ps -a # 查看所有容器的列表，甚至包含未运行的容器 docker kill &lt;hash&gt; # 强制关闭指定的容器 docker rm &lt;hash&gt; # 从此机器中删除指定的容器 docker rm $(docker ps -a -q) # 从此机器中删除所有容器 docker images -a # 显示此机器上的所有镜像 docker rmi &lt;imagename&gt; # 从此机器中删除指定的镜像 docker rmi $(docker images -q) # 从此机器中删除所有镜像 docker login # 使用您的 Docker 凭证登录此 CLI 会话 docker tag &lt;image&gt; username/repository:tag # 标记 &lt;image&gt; 以上传到镜像库 docker push username/repository:tag # 将已标记的镜像上传到镜像库 docker run username/repository:tag # 运行镜像库中的镜像`]]></content>
+    <content type="text"><![CDATA[gitlab自动构造根据官方 Dockerfile配置进行自定义配置 gitlab-runner 镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==） .dockerignore文件排除 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取dotnetcore镜像(使用国内的仓库daocloud)12echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker` sudo systemctl docker restart` docker 命令：12345678910111213141516docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名 docker run -p 4000:80 friendlyname # 运行端口 4000 到 90 的“友好名称”映射 docker run -d -p 4000:80 friendlyname # 内容相同，但在分离模式下 docker ps # 查看所有正在运行的容器的列表 docker stop &lt;hash&gt; # 平稳地停止指定的容器 docker ps -a # 查看所有容器的列表，甚至包含未运行的容器 docker kill &lt;hash&gt; # 强制关闭指定的容器 docker rm &lt;hash&gt; # 从此机器中删除指定的容器 docker rm $(docker ps -a -q) # 从此机器中删除所有容器 docker images -a # 显示此机器上的所有镜像 docker rmi &lt;imagename&gt; # 从此机器中删除指定的镜像 docker rmi $(docker images -q) # 从此机器中删除所有镜像 docker login # 使用您的 Docker 凭证登录此 CLI 会话 docker tag &lt;image&gt; username/repository:tag # 标记 &lt;image&gt; 以上传到镜像库 docker push username/repository:tag # 将已标记的镜像上传到镜像库 docker run username/repository:tag # 运行镜像库中的镜像` docker logs 容器ID # 查看容器的日志 参考- [docker官网](https://docs.docker.com/v17.12/docker-cloud/apps/stack-yaml-reference/#stack-file-example) - [microsoft/aspnetcore dockerfile(主要来源)](https://hub.docker.com/r/microsoft/aspnetcore/dockerfile) - [Using Supervisor with Docker](https://www.ctolib.com/docs/sfile/Docker-Tutorials/Demo/Docker_Supervisor.html) - [Docker网络模型对比](https://www.jianshu.com/p/421c9181456e?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends) - [Docker 常用指令详解](https://www.jianshu.com/p/7c9e2247cfbd?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends) - [docker logs－查看docker容器日志](https://www.jianshu.com/p/1eb1d1d3f25e) - [实时查看Docker容器占用的CPU，内存状态](https://blog.csdn.net/liuzhang6966/article/details/89532061)]]></content>
       <categories>
         <category>docker</category>
       </categories>
@@ -80,7 +208,7 @@
   <entry>
     <title><![CDATA[centos]]></title>
     <url>%2F2019%2F08%2F13%2Fcentos%2F</url>
-    <content type="text"><![CDATA[htop 描述：linux 监控软件，比top更强大 安装 yum install epel-release -y yum install htop -y centos7 修改yum镜像源 命令 mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup #备份 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo yum makecache 参考 linux修改yum源镜像源 【CentOS7】yum安装时出现错误[Errno 14] curl#6 - “Could not resolve host: mirrors.aliyuncs.com; Unknown e的解决办法 docker配置国内阿里云镜像源 如何查看yum 安装的软件路径（不要再忘了）]]></content>
+    <content type="text"><![CDATA[htop 描述linux 监控软件，比top更强大 安装12yum install epel-release -yyum install htop -y centos7修改yum镜像源 命令123mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup #备份wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo yum makecache 参考 linux修改yum源镜像源 【CentOS7】yum安装时出现错误[Errno 14] curl#6 - “Could not resolve host: mirrors.aliyuncs.com; Unknown e的解决办法 docker配置国内阿里云镜像源 如何查看yum 安装的软件路径（不要再忘了）]]></content>
       <categories>
         <category>centos</category>
       </categories>
@@ -91,7 +219,7 @@
   <entry>
     <title><![CDATA[知识点]]></title>
     <url>%2F2019%2F08%2F13%2F%E7%9F%A5%E8%AF%86%E7%82%B9%2F</url>
-    <content type="text"><![CDATA[xmind绘制高颜值导图的秘诀，都在这了 开源堡垒机jumpserver搭建 CentOs安装oh my zsh]]></content>
+    <content type="text"><![CDATA[xmind xmind绘制高颜值导图的秘诀，都在这了堡垒机 开源堡垒机jumpserver搭建常用正则 知道这20个正则表达式，能让你少写1,000行代码]]></content>
       <tags>
         <tag>knowledge</tag>
       </tags>
@@ -99,7 +227,7 @@
   <entry>
     <title><![CDATA[csharp学习]]></title>
     <url>%2F2019%2F08%2F13%2Fcsharp%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[==使用Nexus搭建私有Nuget仓库== ling查询sql跟踪 .net framework下如何得到EF查询生成的SQL？ .net core 利用日志查看ef生成的SQL语句 C#中为什么会出现空静态构造方法的写法 NetCore实践篇：分布式监控客户端ZipkinTracer从入门到放弃之路 ASP.NET Core 知多少系列：总体介绍及目录 SkyWalking 分布式追踪系统 .NetCore利用BlockingCollection实现简易消息队列 [C#] const vs. static readonly 从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储 WinDbg分析高内存占用问题 IdentityServer4 知多少 Polly 故障处理（一）： 重试策略 利用Skywalking-netcore监控你的应用性能 使用EasyNetQ组件操作RabbitMQ消息队列服务 .NET中的各种池 .net core项目实战汇总 Topshelf 秒建 Windows 服务 线程安全知多少 ASP.NET 谨用 async/await .NET Core容器化之多容器应用部署@Docker-Compose ==C#.net干货，最全公共帮助类（Common.Utility== C#单例模式的实现和性能对比 一个高性能的.NET序列化库：ZeroFormatter .NET分布式框架 | Orleans 知多少 ASP.NET Core JWT 认证 .NET Core + Consul 服务注册与发现 Orleans解决并发之痛（一）：单线程 00.AutoMapper 之入门指南(Getting Started Guide) C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦 Elasticsearch系列教程(一)：安装 OAuth2.0 知多少 ABP 源码解析 一. ABP启动 .NET:持续进化的统一开发平台 AspNetCore 限流中间件IpRateLimitMiddleware 介绍 AspNetCore 2.2 新特性—HealthCheck AspNetCore 2.2 新特性 – ProblemDetails 从壹开始微服务 [ DDD ] 之一 ║ D3模式设计初探 与 我的计划书 EF Core中避免贫血模型的三种行之有效的方法（翻译） DDD理论学习系列（1）– 通用语言 领域驱动设计到底难在哪？ 为什么DDD是设计微服务的最佳实践 DDD分层架构的三种模式 浅析DDD(领域驱动设计) 为什么DDD是设计微服务的最佳实践 ASP.NET CORE 增加日志到数据库或文件 如何为 .NET Core CLI 启用 TAB 自动补全功能 .NET运行时中的监测和可观测性 长期更新】迈向现代化的 .Net 配置指北 AspNetCore微服务下的网关-Kong(一) .Net Core 环境下构建强大且易用的规则引擎 [搬运] C# 这些年来受欢迎的特性 [周译见] C# 7 中的模范和实践 [翻译]在 .NET Core 中的并发编程 [翻译] 使用ElasticSearch，Kibana，ASP.NET Core和Docker可视化数据 .Net 4.X 提前用上 .Net Core 的配置模式以及热重载配置 [搬运]在C#使用.NET 设计模式的新观点 [搬运]在C#使用.NET 设计模式的新观点 在容器中利用Nginx-proxy实现多域名的自动反向代理、免费SSL证书 .NET Core开源组件:后台任务利器之Hangfire C# 中使用面向切面编程（AOP）中实践代码整洁 .NET Core + Consul 服务注册与发现 .Netcore 2.0 Ocelot Api网关教程（4）- 服务发现 收集一些优秀的DoNet开源项目 ==C# EF 批量操作== .NET 反编译调试神器：dnSpy了解一下 基于 EntityFramework 生成Repository模式代码 [翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志 ==VS扩展插件-CodeMaid整洁你的代码== 多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？ (译)构建Async同步基元，Part 6 AsyncLock ==（译）关于async与await的FAQ== ASP.NET Core使用Jaeger实现分布式追踪 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM 高性能微服务网关.NETCore客户端Kong.Net开源发布 ==Asp.NETCore让FromServices回来-属性注入== 随笔分类 - .netcore ASP.NET Core官网 当前标签: surging-dotnet微服务系列 netcore+mysql+nginx+redis系列 .NET Core 迁移躺坑记 ==一个超轻量级工作流引擎：Workflow-Core== 基于DDD的微服务设计和开发实战 ==.NET Core微服务系列基础文章索引（目录导航）== ASP.NET Core 基础知识(十二)【Host之通用主机】 .net core 网站如何附加到进程 C#中关于增强和丰富类功能的几种方式]]></content>
+    <content type="text"><![CDATA[nuget库 使用Nexus搭建私有Nuget仓库linq .net framework下如何得到EF查询生成的SQL？C#语法 C#中为什么会出现空静态构造方法的写法 [C#] const vs. static readonly WinDbg分析高内存占用问题 .NET中的各种池 线程安全知多少 C#.net干货，最全公共帮助类ASP.NET Core ASP.NET Core 知多少系列：总体介绍及目录 ASP.NET 谨用 async/await ASP.NET Core JWT 认证.NET Core .NetCore利用BlockingCollection实现简易消息队列 从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储 利用Skywalking-netcore监控你的应用性能 .NET分布式框架 | Orleans 知多少 IdentityServer IdentityServer4 知多少 .net core项目实战汇总 第三方库 Polly 故障处理（一）： 重试策略 一个高性能的.NET序列化库：ZeroFormatter C# EF 批量操作 VS扩展插件-CodeMaid整洁你的代码 一个超轻量级工作流引擎：Workflow-Core RabbitMQ 使用EasyNetQ组件操作RabbitMQ消息队列服务 其他 Topshelf 秒建 Windows 服务 .NET Core容器化之多容器应用部署@Docker-Compose .NET Core + Consul 服务注册与发现 Orleans解决并发之痛（一）：单线程 00.AutoMapper 之入门指南(Getting Started Guide) C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦 OAuth2.0 知多少 ABP 源码解析 一. ABP启动 .NET:持续进化的统一开发平台 AspNetCore 限流中间件IpRateLimitMiddleware 介绍 AspNetCore 2.2 新特性—HealthCheck AspNetCore 2.2 新特性 – ProblemDetails 从壹开始微服务 [ DDD ] 之一 ║ D3模式设计初探 与 我的计划书 EF Core中避免贫血模型的三种行之有效的方法（翻译） DDD理论学习系列（1）– 通用语言 领域驱动设计到底难在哪？ 为什么DDD是设计微服务的最佳实践 DDD分层架构的三种模式 浅析DDD(领域驱动设计) 为什么DDD是设计微服务的最佳实践 ASP.NET CORE 增加日志到数据库或文件 如何为 .NET Core CLI 启用 TAB 自动补全功能 .NET运行时中的监测和可观测性 长期更新】迈向现代化的 .Net 配置指北 AspNetCore微服务下的网关-Kong(一) .Net Core 环境下构建强大且易用的规则引擎 [搬运] C# 这些年来受欢迎的特性 [周译见] C# 7 中的模范和实践 [翻译]在 .NET Core 中的并发编程 [翻译] 使用ElasticSearch，Kibana，ASP.NET Core和Docker可视化数据 .Net 4.X 提前用上 .Net Core 的配置模式以及热重载配置 [搬运]在C#使用.NET 设计模式的新观点 [搬运]在C#使用.NET 设计模式的新观点 在容器中利用Nginx-proxy实现多域名的自动反向代理、免费SSL证书 .NET Core开源组件:后台任务利器之Hangfire C# 中使用面向切面编程（AOP）中实践代码整洁 .NET Core + Consul 服务注册与发现 .Netcore 2.0 Ocelot Api网关教程（4）- 服务发现 收集一些优秀的DoNet开源项目 .NET 反编译调试神器：dnSpy了解一下 基于 EntityFramework 生成Repository模式代码 [翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志 多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？ (译)构建Async同步基元，Part 6 AsyncLock ==（译）关于async与await的FAQ== ASP.NET Core使用Jaeger实现分布式追踪 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM 高性能微服务网关.NETCore客户端Kong.Net开源发布 ==Asp.NETCore让FromServices回来-属性注入== 随笔分类 - .netcore ASP.NET Core官网 当前标签: surging-dotnet微服务系列 netcore+mysql+nginx+redis系列 .NET Core 迁移躺坑记 基于DDD的微服务设计和开发实战 ==.NET Core微服务系列基础文章索引（目录导航）== ASP.NET Core 基础知识(十二)【Host之通用主机】 .net core 网站如何附加到进程 C#中关于增强和丰富类功能的几种方式]]></content>
       <categories>
         <category>C#</category>
       </categories>
@@ -108,20 +236,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[kafka学习]]></title>
-    <url>%2F2019%2F08%2F13%2Fkafka%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[docker下安装kafka和kafka-manager]]></content>
-      <categories>
-        <category>kafka</category>
-      </categories>
-      <tags>
-        <tag>kafka</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[netcore学习]]></title>
     <url>%2F2019%2F08%2F13%2Fnetcore%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[==Linux系统常用监控工具== ==ENode 2.8 最新架构图简介== ASP.NET Core知多少（12）：中断请求了解一下 ==响应式编程知多少 | Rx.NET 了解下== MediatR 知多少 ASP.NET Core中GetService（）和GetRequiredService（）之间的区别 译 | .NET Core 3.0 对诊断的改进 ==使用 MiniProfiler 分析 ASP.NET Core 应用== Dapper的正确使用姿势 基于.net core微服务(Consul,Ocelot,Docker,App.Metrics+、Exceptionless+ 分享一个.NET平台开源免费跨平台的大数据分析框架.NET for Apache Spark 从ASP.NET Core2.2到3.0你可能会遇到这些问题 10个小技巧助您写出高性能的ASP.NET Core代码 一个.NET Core开发者的Linux入门学习笔记 ASP.NET Core依赖注入——依赖注入最佳实践 .NET Core中的一个接口多种实现的依赖注入与动态选择看这篇就够了 ASP.NET Core Web API 版本控制了解一下吧 Asp.Net Core 轻松学-多线程之Task快速上手 TransactionScope事务处理方法介绍及.NET Core中的注意事项 ASP.NET Core中使用MediatR实现命令和中介者模式 Asp.Net Core 轻松学-在.Net Core 使用缓存和配置依赖策略 ==通俗易懂，C#如何安全、高效地玩转任何种类的内存之Memory(三)== ==C# 中的新增功能== Visual Studio模板代码注释小技巧分享 ASP.NET Core Razor页面 vs MVC netcore搭建追踪系统 全链路监控Jaeger搭建实战 通过 Jaeger 上报 .NET 应用数据 ==opentracing-contrib/csharp-netcore== 使用 Jaeger 追蹤 ASP.NET Core 呼叫 ==.NET Core 上使用 Jaeger 追蹤 gRPC 呼叫== 使用 Jaeger 追蹤 ASP.NET Core 中的 class 呼叫 vs IDE插件 Open Command Line CodeMaid ==101 LINQ Samples== 微软官方示例代码 netcore强制使用https，把所有的HTTP请求转换为HTTPS 从壹开始前后端分离 [.netCore 填坑 ] 三十二║ 四种方法快速实现项目的半自动化搭建 动软代码生成器 T4 模板 EFCore many-to-many 的CRUD ==基于.NET CORE微服务框架 -谈谈Cache中间件和缓存降级系列== ==Awesome .NET Core== ==Pipelines - .NET中的新IO API指引(一)==]]></content>
+    <content type="text"><![CDATA[netcore学习 Introducing diagnostics improvements in .NET Core 3.0 使用dotnet-dump 查找 .net core 3.0 占用CPU 100%的原因 ==ENode 2.8 最新架构图简介== ASP.NET Core知多少（12）：中断请求了解一下 ==响应式编程知多少 | Rx.NET 了解下== MediatR 知多少 ASP.NET Core中GetService（）和GetRequiredService（）之间的区别 译 | .NET Core 3.0 对诊断的改进 ==使用 MiniProfiler 分析 ASP.NET Core 应用== Dapper的正确使用姿势 基于.net core微服务(Consul,Ocelot,Docker,App.Metrics+、Exceptionless+ 分享一个.NET平台开源免费跨平台的大数据分析框架.NET for Apache Spark 从ASP.NET Core2.2到3.0你可能会遇到这些问题 10个小技巧助您写出高性能的ASP.NET Core代码 一个.NET Core开发者的Linux入门学习笔记 ASP.NET Core依赖注入——依赖注入最佳实践 .NET Core中的一个接口多种实现的依赖注入与动态选择看这篇就够了 ASP.NET Core Web API 版本控制了解一下吧 Asp.Net Core 轻松学-多线程之Task快速上手 TransactionScope事务处理方法介绍及.NET Core中的注意事项 ASP.NET Core中使用MediatR实现命令和中介者模式 Asp.Net Core 轻松学-在.Net Core 使用缓存和配置依赖策略 ==通俗易懂，C#如何安全、高效地玩转任何种类的内存之Memory(三)== ==C# 中的新增功能== Visual Studio模板代码注释小技巧分享 ASP.NET Core Razor页面 vs MVC netcore搭建追踪系统 全链路监控Jaeger搭建实战 通过 Jaeger 上报 .NET 应用数据 ==opentracing-contrib/csharp-netcore== 使用 Jaeger 追蹤 ASP.NET Core 呼叫 ==.NET Core 上使用 Jaeger 追蹤 gRPC 呼叫== 使用 Jaeger 追蹤 ASP.NET Core 中的 class 呼叫 vs IDE插件 Open Command Line CodeMaid ==101 LINQ Samples== 微软官方示例代码 netcore强制使用https，把所有的HTTP请求转换为HTTPS 从壹开始前后端分离 [.netCore 填坑 ] 三十二║ 四种方法快速实现项目的半自动化搭建 动软代码生成器 T4 模板 EFCore many-to-many 的CRUD ==基于.NET CORE微服务框架 -谈谈Cache中间件和缓存降级系列== ==Awesome .NET Core== ==Pipelines - .NET中的新IO API指引(一)==]]></content>
       <categories>
         <category>ASP.NET Core</category>
       </categories>
@@ -132,7 +249,7 @@
   <entry>
     <title><![CDATA[github第三方库]]></title>
     <url>%2F2019%2F08%2F13%2Fgithub%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%93%2F</url>
-    <content type="text"><![CDATA[github+hexo 自建个人博客 使用 Hexo+GitHub 搭建个人免费博客教程（小白向） Hexo-Next-主题优化(一) hexo 多终端同步博客 Hexo + yilia 搭建博客可能会遇到的所有疑问 使用Hexo+Next主题搭建自己的个人博客 Hexo中添加本地文件下载 快速、简洁且高效的博客框架 问题 bash: hexo: command not found 建议在系统变量中的path中添加。然后需要关闭Git Bash窗口，重新打开即可，记住，一定要关闭，并重新打开命令窗口，否则配置不会生效 d C github description Nito.AsyncEx A helper library for the Task-Based Asynchronous Pattern (TAP). Npoi.Mapper Use this tool to import or export data with Excel file. The tool is a convention based mapper between strong typed object and Excel data via NPOI. ASP.NET Core开发者指南 作为 ASP.NET Core 开发者，我接下来应该学习什么 Swashbuckle.AspNetCore Swagger tools for documenting API’s built on ASP.NET Core Microsoft.Extensions.Logging.Log4Net.AspNetCore Allows to configure Log4net as Microsoft Extensions Logging handler on any ASP.NET Core application WebApiClient.JIT An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously. PuppeteerSharp Headless Chrome .NET API https://www.puppeteersharp.com AutoMapper Autofac is an addictive Inversion of Control container for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more. Polly Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner. From version 6.0.1, Polly targets .NET Standard 1.1 and 2.0+. RabbitMQ.Client The RabbitMQ .NET client is an implementation of an AMQP 0-9-1 client library for C# (and, implicitly, other .NET languages). WebApiClient.JIT An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously. AngleSharp The ultimate angle brackets parser library parsing HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specifications GO|github|description||:——|:—–:||gin|Gin is a HTTP web framework written in Go (Golang). ||gorm|The fantastic ORM library for Golang||swag|Automatically generate RESTful API documentation with Swagger 2.0 for Go.|||||||||||||||||||||||||||||||||||||||| Linux|github|description||:——|:—–:||oh-my-zsh|A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration|]]></content>
+    <content type="text"><![CDATA[C github description Nito.AsyncEx A helper library for the Task-Based Asynchronous Pattern (TAP). Npoi.Mapper Use this tool to import or export data with Excel file. The tool is a convention based mapper between strong typed object and Excel data via NPOI. ASP.NET Core开发者指南 作为 ASP.NET Core 开发者，我接下来应该学习什么 Swashbuckle.AspNetCore Swagger tools for documenting API’s built on ASP.NET Core Microsoft.Extensions.Logging.Log4Net.AspNetCore Allows to configure Log4net as Microsoft Extensions Logging handler on any ASP.NET Core application WebApiClient.JIT An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously. PuppeteerSharp Headless Chrome .NET API https://www.puppeteersharp.com AutoMapper Autofac is an addictive Inversion of Control container for .NET Core, ASP.NET Core, .NET 4.5.1+, Universal Windows apps, and more. Polly Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner. From version 6.0.1, Polly targets .NET Standard 1.1 and 2.0+. RabbitMQ.Client The RabbitMQ .NET client is an implementation of an AMQP 0-9-1 client library for C# (and, implicitly, other .NET languages). WebApiClient.JIT An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously. AngleSharp The ultimate angle brackets parser library parsing HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specifications GO github description gin Gin is a HTTP web framework written in Go (Golang). gorm The fantastic ORM library for Golang swag Automatically generate RESTful API documentation with Swagger 2.0 for Go. Linux github description oh-my-zsh A delightful community-driven (with 1,300+ contributors) framework for managing your zsh configuration]]></content>
       <categories>
         <category>github</category>
       </categories>
@@ -143,15 +260,15 @@
   <entry>
     <title><![CDATA[download]]></title>
     <url>%2F2019%2F08%2F13%2Fdownload%2F</url>
-    <content type="text"><![CDATA[linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell-dotnet发布脚本 jmeter-性能测试]]></content>
+    <content type="text"><![CDATA[linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell-dotnet发布脚本 jmeter-性能测试 vs.gitignore排除文件]]></content>
       <tags>
         <tag>download</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[powershell学习.md]]></title>
-    <url>%2F2019%2F07%2F30%2Fpowershell%E5%AD%A6%E4%B9%A0-md%2F</url>
-    <content type="text"><![CDATA[Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
+    <url>%2F2019%2F07%2F30%2Fpowershell%2F</url>
+    <content type="text"><![CDATA[powershell Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
       <categories>
         <category>powershell</category>
       </categories>
@@ -162,7 +279,7 @@
   <entry>
     <title><![CDATA[linux学习]]></title>
     <url>%2F2019%2F07%2F29%2Flinux%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[-Linux上，最常用的一批命令解析（10年精选） 100 道 Linux 笔试题，能拿 80 分就算大神 Shell三剑客grep、awk、sed 带你走进脚本世界，ijkplayer之【init-ios.sh】脚本分析 一篇文章学懂Shell脚本 shell 脚本 - 基础知识及变量学习 优雅的Linux&gt;&gt;Shell笔记与探索系列 【linux二三轶事】重定向是啥？文件描述符是啥？]]></content>
+    <content type="text"><![CDATA[linux学习 Linux系统常用监控工具 Linux上，最常用的一批命令解析（10年精选） 100 道 Linux 笔试题，能拿 80 分就算大神 Shell三剑客grep、awk、sed 带你走进脚本世界，ijkplayer之【init-ios.sh】脚本分析 一篇文章学懂Shell脚本 shell 脚本 - 基础知识及变量学习 优雅的Linux&gt;&gt;Shell笔记与探索系列 【linux二三轶事】重定向是啥？文件描述符是啥？]]></content>
       <categories>
         <category>linux</category>
       </categories>
@@ -173,7 +290,7 @@
   <entry>
     <title><![CDATA[Google插件]]></title>
     <url>%2F2019%2F07%2F29%2FGoogle%E6%8F%92%E4%BB%B6%2F</url>
-    <content type="text"><![CDATA[uBlock Origin Octotree 划词翻译 OneTab GitZip for github GitZip for github教程 Whatruns]]></content>
+    <content type="text"><![CDATA[插件 uBlock Origin Octotree 划词翻译 OneTab GitZip for github Whatruns参考 GitZip for github教程]]></content>
       <categories>
         <category>google</category>
         <category>插件</category>
@@ -186,7 +303,7 @@
   <entry>
     <title><![CDATA[架构之路]]></title>
     <url>%2F2019%2F07%2F29%2F%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF%2F</url>
-    <content type="text"><![CDATA[模拟淘宝服务端的高并发分布式架构演进之路 ==架构师之路18年精选100篇-58沈剑== ==架构师之路，半年文章精选== 『互联网架构』软件架构-软件系统设计（一） 单点登录（SSO）看这一篇就够了 OAuth2和JWT - 如何设计安全的API？ Oauth2.0详解及安全使用 如何设计一个秒杀系统 监控、日志、APM整个监控体系思考 这么多监控组件，总有一款适合你 每秒上千订单场景下的分布式锁高并发优化实践！ 互联网系统架构与应用 Web应用系统架构演进过程 架构师修行之路 可视化工具Grafana的简介 ==为了做到微服务的高可用，鬼知道我出了多少张牌== ELK实时日志分析平台的搭建部署及使用 使用ELK(Elasticsearch + Logstash + Kibana) 搭建日志集中分析平台实践 ==架构师技术图谱，助你早日成为架构师==]]></content>
+    <content type="text"><![CDATA[架构演进 模拟淘宝服务端的高并发分布式架构演进之路 『互联网架构』软件架构-软件系统设计（一） 为了做到微服务的高可用，鬼知道我出了多少张牌 Web应用系统架构演进过程 架构师技术图谱，助你早日成为架构师 从新手到架构师，一篇就够：从100到1000万高并发的架构演进之路 互联网系统架构与应用 架构系列 架构师之路18年精选100篇-58沈剑 架构师之路，半年文章精选 监控 监控、日志、APM整个监控体系思考 这么多监控组件，总有一款适合你 可视化工具Grafana的简介 ELK实时日志分析平台的搭建部署及使用 使用ELK(Elasticsearch + Logstash + Kibana) 搭建日志集中分析平台实践 OAuth2/JWT 单点登录（SSO）看这一篇就够了 OAuth2和JWT - 如何设计安全的API？ Oauth2.0详解及安全使用 优化 如何设计一个秒杀系统 每秒上千订单场景下的分布式锁高并发优化实践！ 如何防止订单重复提交以及如何防止订单重复确认 分布式锁 分布式锁看这篇就够了其他 程序员需要知道的缩写和专业名词]]></content>
       <categories>
         <category>架构师</category>
         <category>分布式</category>

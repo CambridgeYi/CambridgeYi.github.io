@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="文档  docker官网 microsoft/aspnetcore dockerfile(主要来源) Using Supervisor with Docker Docker网络模型对比 Docker 常用指令详解 ==通过docker logs命令可以查看容器的日志== docker logs－查看docker容器日志 =实时查看Docker容器占用的CPU，内存状态=">
+<meta name="description" content="gitlab自动构造根据官方 Dockerfile配置进行自定义配置  gitlab-runner    镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==）   .dockerignore文件排除 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取d">
 <meta name="keywords" content="docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker">
 <meta property="og:url" content="http://yoursite.com/2019/08/13/docker/index.html">
 <meta property="og:site_name" content="LTO">
-<meta property="og:description" content="文档  docker官网 microsoft/aspnetcore dockerfile(主要来源) Using Supervisor with Docker Docker网络模型对比 Docker 常用指令详解 ==通过docker logs命令可以查看容器的日志== docker logs－查看docker容器日志 =实时查看Docker容器占用的CPU，内存状态=">
+<meta property="og:description" content="gitlab自动构造根据官方 Dockerfile配置进行自定义配置  gitlab-runner    镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==）   .dockerignore文件排除 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取d">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-13T10:15:47.332Z">
+<meta property="og:updated_time" content="2019-08-14T11:45:49.224Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker">
-<meta name="twitter:description" content="文档  docker官网 microsoft/aspnetcore dockerfile(主要来源) Using Supervisor with Docker Docker网络模型对比 Docker 常用指令详解 ==通过docker logs命令可以查看容器的日志== docker logs－查看docker容器日志 =实时查看Docker容器占用的CPU，内存状态=">
+<meta name="twitter:description" content="gitlab自动构造根据官方 Dockerfile配置进行自定义配置  gitlab-runner    镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==）   .dockerignore文件排除 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取d">
 
 
 
@@ -386,69 +386,34 @@
       
 
       
-        <ul>
-<li><p>文档</p>
+        <h4 id="gitlab自动构造"><a href="#gitlab自动构造" class="headerlink" title="gitlab自动构造"></a>gitlab自动构造</h4><p>根据官方 Dockerfile配置进行自定义配置</p>
 <ul>
-<li><a href="https://docs.docker.com/v17.12/docker-cloud/apps/stack-yaml-reference/#stack-file-example" target="_blank" rel="noopener">docker官网</a></li>
-<li><a href="https://hub.docker.com/r/microsoft/aspnetcore/dockerfile" target="_blank" rel="noopener">microsoft/aspnetcore dockerfile(主要来源)</a></li>
-<li><a href="https://www.ctolib.com/docs/sfile/Docker-Tutorials/Demo/Docker_Supervisor.html" target="_blank" rel="noopener">Using Supervisor with Docker</a></li>
-<li><a href="https://www.jianshu.com/p/421c9181456e?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Docker网络模型对比</a></li>
-<li><a href="https://www.jianshu.com/p/7c9e2247cfbd?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends" target="_blank" rel="noopener">Docker 常用指令详解</a></li>
-<li>==通过docker logs命令可以查看容器的日志==</li>
-<li><a href="https://www.jianshu.com/p/1eb1d1d3f25e" target="_blank" rel="noopener">docker logs－查看docker容器日志</a></li>
-<li><a href="https://blog.csdn.net/liuzhang6966/article/details/89532061" target="_blank" rel="noopener">=实时查看Docker容器占用的CPU，内存状态=</a></li>
-<li><a href></a><a id="more"></a>
-</li>
+<li><a href="https://hub.docker.com/r/gitlab/gitlab-runner" target="_blank" rel="noopener">gitlab-runner</a> </li>
 </ul>
-</li>
-<li><h4 id="根据官方-Dockerfile配置进行自定义配置"><a href="#根据官方-Dockerfile配置进行自定义配置" class="headerlink" title="根据官方 Dockerfile配置进行自定义配置"></a><a href="https://hub.docker.com/r/gitlab/gitlab-runner" target="_blank" rel="noopener">根据官方 Dockerfile配置进行自定义配置</a></h4></li>
-<li><h4 id="镜像库拉取"><a href="#镜像库拉取" class="headerlink" title="镜像库拉取"></a>镜像库拉取</h4><ul>
+<ol>
+<li>镜像库拉取<ul>
 <li>先在本地拉取到官方镜像库</li>
 <li>然后将官方镜像库提交到==自己的阿里云镜像库==</li>
 <li>之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==）</li>
 </ul>
 </li>
-<li><h4 id="dockerignore文件"><a href="#dockerignore文件" class="headerlink" title="dockerignore文件"></a>dockerignore文件</h4><ul>
-<li>copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件==<ul>
-<li>拉取dotnetcore镜像(使用国内的仓库daocloud)<blockquote>
-<p><code>$ echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker</code><br><code>$ sudo systemctl docker restart</code></p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><h4 id="nginx-consul-docker"><a href="#nginx-consul-docker" class="headerlink" title="nginx + consul + docker"></a>nginx + consul + docker</h4><blockquote>
-<ul>
-<li>参考：<a href="https://www.jianshu.com/p/9976e874c099" target="_blank" rel="noopener">https://www.jianshu.com/p/9976e874c099</a> </li>
-<li>参考：<a href="https://docs.docker-cn.com（官网）" target="_blank" rel="noopener">https://docs.docker-cn.com（官网）</a>  </li>
-<li>参考：<a href="https://www.cnblogs.com/wangjieguang/p/docker-dotnetcore2.html（ms" target="_blank" rel="noopener">https://www.cnblogs.com/wangjieguang/p/docker-dotnetcore2.html（ms</a> docker+Dockerfile） </li>
-</ul>
-</blockquote>
-</li>
-<li><p>docker 命令：</p>
-<ul>
-<li><pre><code>docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名    
-docker run -p 4000:80 friendlyname  # 运行端口 4000 到 90 的“友好名称”映射   docker run -d -p 4000:80 friendlyname         # 内容相同，但在分离模式下    
-docker ps                                 # 查看所有正在运行的容器的列表   
-docker stop &lt;hash&gt;                     # 平稳地停止指定的容器   
-docker ps -a           # 查看所有容器的列表，甚至包含未运行的容器   
-docker kill &lt;hash&gt;                   # 强制关闭指定的容器   
-docker rm &lt;hash&gt;              # 从此机器中删除指定的容器   
-docker rm $(docker ps -a -q)           # 从此机器中删除所有容器   
-docker images -a                               # 显示此机器上的所有镜像  
-docker rmi &lt;imagename&gt;            # 从此机器中删除指定的镜像   
-docker rmi $(docker images -q)             # 从此机器中删除所有镜像   
-docker login             # 使用您的 Docker 凭证登录此 CLI 会话   
-docker tag &lt;image&gt; username/repository:tag  # 标记 &lt;image&gt; 以上传到镜像库   
-docker push username/repository:tag            # 将已标记的镜像上传到镜像库    
-docker run username/repository:tag                   # 运行镜像库中的镜像`  
+<li>.dockerignore文件排除<ul>
+<li>copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件==</li>
+<li>拉取dotnetcore镜像(使用国内的仓库daocloud)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker`   </span><br><span class="line">sudo systemctl docker restart`</span><br></pre></td></tr></table></figure>
 
-</code></pre></li>
-</ul>
 </li>
 </ul>
+</li>
+</ol>
+<h4 id="docker-命令："><a href="#docker-命令：" class="headerlink" title="docker 命令："></a>docker 命令：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名    </span><br><span class="line">docker run -p 4000:80 friendlyname  # 运行端口 4000 到 90 的“友好名称”映射   docker run -d -p 4000:80 friendlyname         # 内容相同，但在分离模式下    </span><br><span class="line">docker ps                                 # 查看所有正在运行的容器的列表   </span><br><span class="line">docker stop &lt;hash&gt;                     # 平稳地停止指定的容器   </span><br><span class="line">docker ps -a           # 查看所有容器的列表，甚至包含未运行的容器   </span><br><span class="line">docker kill &lt;hash&gt;                   # 强制关闭指定的容器   </span><br><span class="line">docker rm &lt;hash&gt;              # 从此机器中删除指定的容器   </span><br><span class="line">docker rm $(docker ps -a -q)           # 从此机器中删除所有容器   </span><br><span class="line">docker images -a                               # 显示此机器上的所有镜像  </span><br><span class="line">docker rmi &lt;imagename&gt;            # 从此机器中删除指定的镜像   </span><br><span class="line">docker rmi $(docker images -q)             # 从此机器中删除所有镜像   </span><br><span class="line">docker login             # 使用您的 Docker 凭证登录此 CLI 会话   </span><br><span class="line">docker tag &lt;image&gt; username/repository:tag  # 标记 &lt;image&gt; 以上传到镜像库   </span><br><span class="line">docker push username/repository:tag            # 将已标记的镜像上传到镜像库    </span><br><span class="line">docker run username/repository:tag                   # 运行镜像库中的镜像` </span><br><span class="line">docker logs 容器ID  # 查看容器的日志</span><br></pre></td></tr></table></figure>
 
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><pre><code>- [docker官网](https://docs.docker.com/v17.12/docker-cloud/apps/stack-yaml-reference/#stack-file-example)
+- [microsoft/aspnetcore dockerfile(主要来源)](https://hub.docker.com/r/microsoft/aspnetcore/dockerfile)
+- [Using Supervisor with Docker](https://www.ctolib.com/docs/sfile/Docker-Tutorials/Demo/Docker_Supervisor.html)
+- [Docker网络模型对比](https://www.jianshu.com/p/421c9181456e?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends)
+- [Docker 常用指令详解](https://www.jianshu.com/p/7c9e2247cfbd?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends)
+- [docker logs－查看docker容器日志](https://www.jianshu.com/p/1eb1d1d3f25e)
+- [实时查看Docker容器占用的CPU，内存状态](https://blog.csdn.net/liuzhang6966/article/details/89532061)</code></pre>
       
     </div>
     
@@ -569,7 +534,7 @@ docker run username/repository:tag                   # 运行镜像库中的镜�
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -580,7 +545,7 @@ docker run username/repository:tag                   # 运行镜像库中的镜�
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -591,7 +556,7 @@ docker run username/repository:tag                   # 运行镜像库中的镜�
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -634,7 +599,7 @@ docker run username/repository:tag                   # 运行镜像库中的镜�
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#根据官方-Dockerfile配置进行自定义配置"><span class="nav-number">1.</span> <span class="nav-text">根据官方 Dockerfile配置进行自定义配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#镜像库拉取"><span class="nav-number">2.</span> <span class="nav-text">镜像库拉取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dockerignore文件"><span class="nav-number">3.</span> <span class="nav-text">dockerignore文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nginx-consul-docker"><span class="nav-number">4.</span> <span class="nav-text">nginx + consul + docker</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#gitlab自动构造"><span class="nav-number">1.</span> <span class="nav-text">gitlab自动构造</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#docker-命令："><span class="nav-number">2.</span> <span class="nav-text">docker 命令：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
