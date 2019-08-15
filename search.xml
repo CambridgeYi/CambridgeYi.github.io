@@ -131,7 +131,7 @@
   <entry>
     <title><![CDATA[vscode]]></title>
     <url>%2F2019%2F08%2F13%2Fvscode%2F</url>
-    <content type="text"><![CDATA[常用插件 Debugger for Chrome Docker JavaScript (ES6) code snippets PowerShell shell-format Vetur Vue VSCode Snippets XML Tools vscode-iconc vscode VSCode安装shell、bash格式化工具 控制台输出 JavaScript (ES6) code snippets chrome 调试 launch.json 配置 123456789101112131415&#123; // 使用 IntelliSense 了解相关属性。 // 悬停以查看现有属性的描述。 // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387 &quot;version&quot;: &quot;0.2.0&quot;, &quot;configurations&quot;: [ &#123; &quot;type&quot;: &quot;chrome&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;name&quot;: &quot;Chrome&quot;, &quot;url&quot;: &quot;http://localhost:8080&quot;, &quot;webRoot&quot;: &quot;$&#123;workspaceFolder&#125;&quot; &#125; ]&#125;]]></content>
+    <content type="text"><![CDATA[常用插件 Debugger for Chrome Docker JavaScript (ES6) code snippets PowerShell shell-format Vetur Vue VSCode Snippets XML Tools vscode-icons vscode VSCode安装shell、bash格式化工具 控制台输出 JavaScript (ES6) code snippets chrome 调试 launch.json 配置 123456789101112131415&#123; // 使用 IntelliSense 了解相关属性。 // 悬停以查看现有属性的描述。 // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387 &quot;version&quot;: &quot;0.2.0&quot;, &quot;configurations&quot;: [ &#123; &quot;type&quot;: &quot;chrome&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;name&quot;: &quot;Chrome&quot;, &quot;url&quot;: &quot;http://localhost:8080&quot;, &quot;webRoot&quot;: &quot;$&#123;workspaceFolder&#125;&quot; &#125; ]&#125;]]></content>
       <categories>
         <category>vscode</category>
       </categories>
