@@ -121,10 +121,10 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Pisces # 双栏 Scheme，小家碧玉似的清新
+scheme: Pisces # 双栏 Scheme，小家碧玉似的清新
 #scheme: Mist
 #scheme: Pisces
-scheme: Gemini
+#scheme: Gemini
 
 
 # ---------------------------------------------------------------
