@@ -9,7 +9,7 @@ categories: github
 #### C#
 |github|description|
 |:------|:-----:|
-|[Nito.AsyncEx](https://www.nuget.org/packages/Nito.AsyncEx)|A helper library for the Task-Based Asynchronous Pattern (TAP).|
+|[Nito.AsyncEx](https://github.com/StephenCleary/AsyncEx)|A helper library for the Task-Based Asynchronous Pattern (TAP).|
 |[Npoi.Mapper](https://github.com/donnytian/Npoi.Mapper)|Use this tool to import or export data with Excel file. The tool is a convention based mapper between strong typed object and Excel data via NPOI.|
 |[ASP.NET Core开发者指南](https://github.com/dot-nethub/AspNetCore-Developer-Roadmap/blob/master/ReadMe.zh-Hans.md)|作为 ASP.NET Core 开发者，我接下来应该学习什么|
 |[Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)|Swagger tools for documenting API's built on ASP.NET Core|
@@ -30,6 +30,14 @@ categories: github
 |[gin](https://github.com/gin-gonic/gin)|Gin is a HTTP web framework written in Go (Golang). |
 |[gorm](https://github.com/jinzhu/gorm)|The fantastic ORM library for Golang|
 |[swag](https://github.com/swaggo/swag)|Automatically generate RESTful API documentation with Swagger 2.0 for Go.|
+
+
+#### python
+|github|description|
+|:------|:-----:|
+|[***selenium***](https://github.com/SeleniumHQ/selenium/)|浏览器自动化框架和生态系统|
+|[***request***](https://github.com/psf/requests)|Python HTTP Requests for Humans™|
+|[pyquery](https://github.com/gawel/pyquery)|A jquery-like library for python|
 
 #### Linux  
 |github|description|
