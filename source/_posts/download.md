@@ -18,3 +18,9 @@ tags: download
 #### gitlab CI/CD
 - [gitlab-ci自动构造](/download/gitlab-ci.yml)
 - [Docker镜像](/download/Dockerfile)
+
+#### python
+- [天猫价格爬取并截图](/download/天猫爬虫并截图(python).7z)
+
+#### Dotnet Core
+- [爬虫并截图](/download/CSharp版爬虫并截图.7z)

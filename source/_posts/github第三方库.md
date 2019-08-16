@@ -6,7 +6,7 @@ categories: github
 ---
 
 
-#### C#
+#### CSharp
 |github|description|
 |:------|:-----:|
 |[Nito.AsyncEx](https://github.com/StephenCleary/AsyncEx)|A helper library for the Task-Based Asynchronous Pattern (TAP).|
@@ -24,7 +24,7 @@ categories: github
 
 <!--more-->
 
-#### GO
+#### Go
 |github|description|
 |:------|:-----:|
 |[gin](https://github.com/gin-gonic/gin)|Gin is a HTTP web framework written in Go (Golang). |
@@ -32,7 +32,7 @@ categories: github
 |[swag](https://github.com/swaggo/swag)|Automatically generate RESTful API documentation with Swagger 2.0 for Go.|
 
 
-#### python
+#### Python
 |github|description|
 |:------|:-----:|
 |[***selenium***](https://github.com/SeleniumHQ/selenium/)|浏览器自动化框架和生态系统|
