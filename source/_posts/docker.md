@@ -42,10 +42,11 @@ categories: docker
 
 
 #### 参考
-    - [docker官网](https://docs.docker.com/v17.12/docker-cloud/apps/stack-yaml-reference/#stack-file-example)
-    - [microsoft/aspnetcore dockerfile(主要来源)](https://hub.docker.com/r/microsoft/aspnetcore/dockerfile)
-    - [Using Supervisor with Docker](https://www.ctolib.com/docs/sfile/Docker-Tutorials/Demo/Docker_Supervisor.html)
-    - [Docker网络模型对比](https://www.jianshu.com/p/421c9181456e?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-    - [Docker 常用指令详解](https://www.jianshu.com/p/7c9e2247cfbd?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
-    - [docker logs－查看docker容器日志](https://www.jianshu.com/p/1eb1d1d3f25e)
-    - [实时查看Docker容器占用的CPU，内存状态](https://blog.csdn.net/liuzhang6966/article/details/89532061)
+- [docker官网](https://docs.docker.com/v17.12/docker-cloud/apps/stack-yaml-reference/#stack-file-example)
+- [microsoft/aspnetcore dockerfile(主要来源)](https://hub.docker.com/r/microsoft/aspnetcore/dockerfile)
+- [Using Supervisor with Docker](https://www.ctolib.com/docs/sfile/Docker-Tutorials/Demo/Docker_Supervisor.html)
+- [Docker网络模型对比](https://www.jianshu.com/p/421c9181456e?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [Docker 常用指令详解](https://www.jianshu.com/p/7c9e2247cfbd?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
+- [docker logs－查看docker容器日志](https://www.jianshu.com/p/1eb1d1d3f25e)
+- [实时查看Docker容器占用的CPU，内存状态](https://blog.csdn.net/liuzhang6966/article/details/89532061)
+- [<font color=#dd00dd size=3>如何编写最佳的Dockerfile</font>](https://blog.fundebug.com/2017/05/15/write-excellent-dockerfile/)

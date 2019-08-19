@@ -47,7 +47,7 @@ categories: go
 1. db.LogMode(true)
 #### 参考
 - [GORM中文文档](https://learnku.com/docs/gorm/2018/migration/3799)
-- [<font color=#dd00dd size=3>beego作者go入门教程</font>](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/01.0.md)
+- [<font color=#dd00dd size=3>go入门教程</font>](https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/01.0.md)
 - [gorm中文](http://gorm.book.jasperxu.com/crud.html#c)
 - [grpc中文](https://doc.rpcx.site/part1/quickstart.html)
 - [go常见问题](https://colobu.com/2015/09/07/gotchas-and-common-mistakes-in-go-golang/)
