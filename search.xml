@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[k8s]]></title>
+    <url>%2F2019%2F08%2F19%2Fk8s%2F</url>
+    <content type="text"><![CDATA[10分钟看懂Docker和K8S]]></content>
+      <categories>
+        <category>k8s</category>
+      </categories>
+      <tags>
+        <tag>k8s</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vue]]></title>
+    <url>%2F2019%2F08%2F19%2Fvue%2F</url>
+    <content type="text"><![CDATA[模板 Vue管理后台框架选择推荐]]></content>
+      <categories>
+        <category>vue</category>
+        <category>管理后台</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[supervisor]]></title>
     <url>%2F2019%2F08%2F14%2Fsupervisor%2F</url>
     <content type="text"><![CDATA[supervisor安装12yum install python-setuptools easy_install supervisor supervisor守护go,conf文件12345678910111213[program:golang-http-server]command=/home/golang/simple_http_serverautostart=trueautorestart=truestartsecs=10stdout_logfile=/var/log/simple_http_server.logstdout_logfile_maxbytes=1MBstdout_logfile_backups=10stdout_capture_maxbytes=1MBstderr_logfile=/var/log/simple_http_server.logstderr_logfile_maxbytes=1MBstderr_logfile_backups=10stderr_capture_maxbytes=1MB 配置说明: - command：表示运行的命令，填入完整的路径即可 - autostart：表示是否跟随supervisor一起启动。 - autorestart：如果该程序挂了，是否重新启动。 - stdout_logfile：终端标准输出重定向文件。 - stderr_logfile：终端错误输出重定向文件。 参考Linux Supervisor的安装与使用入门]]></content>
@@ -52,7 +75,7 @@
   <entry>
     <title><![CDATA[go]]></title>
     <url>%2F2019%2F08%2F14%2Fgo%2F</url>
-    <content type="text"><![CDATA[注释和生成 godoc注释go linux 发布 打开cmd终端，cd到项目src目录下，执行如下操作,这样在main.go同目录下会生产mai n二进制文件 将main二进制文件上传到服务器(==配置文件也需要上传到服务器上,如yaml,json,ini文件等==) 修改main二进制文件权限chmod -R 777 main ，直接运行之 linux 后台运行: ==nohup ./程序名 &amp;== 命令kill -9 PID(9是信号量，表示强制终止)实现重启1234SET CGO_ENABLED=0SET GOOS=linuxSET GOARCH=amd64go build main.go go install/go get生成可执行文件到$GOPATH/bin下 go如何在window服务器部署 编译成 exe 直接运行 编译成 exe，用 winsw 之类的软件构建 windows 服务运行 使用 ldflags 构建后台运行项目，并编写守护进程 用 windows 的 sc 命令构建服务运行 go依赖包 go依赖包安装 根据==import==，直接到github官网下载源码，然后解压，根据GOPATH直接放到src路径下 替换依赖包(墙) 参考Go modules 从入门到放弃 (go1.11)参考go mod replace 记录 修改go.mod默认依赖项 replace cloud.google.com/go =&gt; github.com/GoogleCloudPlatform/google-cloud-go latest gin/gorm 更新数据 使用First() ,设置值,Save()方式 完成==全量更新==数据 使用Update/Updates方式进行==局部更新==,不能使用该方式进行全量更新,会有部分数据无法更新的问题gorm启动自动迁移(只能创建表,不能修改表结构) db.AutoMigrate(表名) gorm启用sql输出 db.LogMode(true)参考 GORM中文文档 beego作者go入门教程 gorm中文 grpc中文 go常见问题 go提升 Go 开发者路线图 Golang标准库文档 gin web文档]]></content>
+    <content type="text"><![CDATA[注释和生成 godoc注释go linux 发布 打开cmd终端，cd到项目src目录下，执行如下操作,这样在main.go同目录下会生产mai n二进制文件 将main二进制文件上传到服务器(==配置文件也需要上传到服务器上,如yaml,json,ini文件等==) 修改main二进制文件权限chmod -R 777 main ，直接运行之 linux 后台运行: ==nohup ./程序名 &amp;== 命令kill -9 PID(9是信号量，表示强制终止)实现重启1234SET CGO_ENABLED=0SET GOOS=linuxSET GOARCH=amd64go build main.go go install/go get生成可执行文件到$GOPATH/bin下 go如何在window服务器部署 编译成 exe 直接运行 编译成 exe，用 winsw 之类的软件构建 windows 服务运行 使用 ldflags 构建后台运行项目，并编写守护进程 用 windows 的 sc 命令构建服务运行 go依赖包 go依赖包安装 根据==import==，直接到github官网下载源码，然后解压，根据GOPATH直接放到src路径下 替换依赖包(墙) 参考Go modules 从入门到放弃 (go1.11)参考go mod replace 记录 修改go.mod默认依赖项 replace cloud.google.com/go =&gt; github.com/GoogleCloudPlatform/google-cloud-go latest gin/gorm 更新数据 使用First() ,设置值,Save()方式 完成==全量更新==数据 使用Update/Updates方式进行==局部更新==,不能使用该方式进行全量更新,会有部分数据无法更新的问题gorm启动自动迁移(只能创建表,不能修改表结构) db.AutoMigrate(表名) gorm启用sql输出 db.LogMode(true)参考 GORM中文文档 go入门教程 gorm中文 grpc中文 go常见问题 go提升 Go 开发者路线图 Golang标准库文档 gin web文档]]></content>
       <categories>
         <category>go</category>
       </categories>
@@ -197,7 +220,7 @@
   <entry>
     <title><![CDATA[docker]]></title>
     <url>%2F2019%2F08%2F13%2Fdocker%2F</url>
-    <content type="text"><![CDATA[gitlab自动构造根据官方 Dockerfile配置进行自定义配置 gitlab-runner 镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==） .dockerignore文件排除 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取dotnetcore镜像(使用国内的仓库daocloud)12echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker` sudo systemctl docker restart` docker 命令：12345678910111213141516docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名 docker run -p 4000:80 friendlyname # 运行端口 4000 到 90 的“友好名称”映射 docker run -d -p 4000:80 friendlyname # 内容相同，但在分离模式下 docker ps # 查看所有正在运行的容器的列表 docker stop &lt;hash&gt; # 平稳地停止指定的容器 docker ps -a # 查看所有容器的列表，甚至包含未运行的容器 docker kill &lt;hash&gt; # 强制关闭指定的容器 docker rm &lt;hash&gt; # 从此机器中删除指定的容器 docker rm $(docker ps -a -q) # 从此机器中删除所有容器 docker images -a # 显示此机器上的所有镜像 docker rmi &lt;imagename&gt; # 从此机器中删除指定的镜像 docker rmi $(docker images -q) # 从此机器中删除所有镜像 docker login # 使用您的 Docker 凭证登录此 CLI 会话 docker tag &lt;image&gt; username/repository:tag # 标记 &lt;image&gt; 以上传到镜像库 docker push username/repository:tag # 将已标记的镜像上传到镜像库 docker run username/repository:tag # 运行镜像库中的镜像` docker logs 容器ID # 查看容器的日志 参考- [docker官网](https://docs.docker.com/v17.12/docker-cloud/apps/stack-yaml-reference/#stack-file-example) - [microsoft/aspnetcore dockerfile(主要来源)](https://hub.docker.com/r/microsoft/aspnetcore/dockerfile) - [Using Supervisor with Docker](https://www.ctolib.com/docs/sfile/Docker-Tutorials/Demo/Docker_Supervisor.html) - [Docker网络模型对比](https://www.jianshu.com/p/421c9181456e?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends) - [Docker 常用指令详解](https://www.jianshu.com/p/7c9e2247cfbd?utm_campaign=hugo&amp;utm_medium=reader_share&amp;utm_content=note&amp;utm_source=weixin-friends) - [docker logs－查看docker容器日志](https://www.jianshu.com/p/1eb1d1d3f25e) - [实时查看Docker容器占用的CPU，内存状态](https://blog.csdn.net/liuzhang6966/article/details/89532061)]]></content>
+    <content type="text"><![CDATA[gitlab自动构造根据官方 Dockerfile配置进行自定义配置 gitlab-runner 镜像库拉取 先在本地拉取到官方镜像库 然后将官方镜像库提交到==自己的阿里云镜像库== 之后的拉取直接从自己的阿里云镜像库中拉取（==拉取会快很多==） .dockerignore文件排除 copy操作会直接根据这个文件进行镜像生成，==.dockerignore会排除很多文件== 拉取dotnetcore镜像(使用国内的仓库daocloud)12echo &quot;DOCKER_OPTS=\&quot;\$DOCKER_OPTS --registry-mirror=http://f2d6cb40.m.daocloud.io\&quot;&quot; | sudo tee -a /etc/default/docker` sudo systemctl docker restart` docker 命令：12345678910111213141516docker build -t friendlyname .# 使用此目录的 Dockerfile 创建镜像 -t 标签名 docker run -p 4000:80 friendlyname # 运行端口 4000 到 90 的“友好名称”映射 docker run -d -p 4000:80 friendlyname # 内容相同，但在分离模式下 docker ps # 查看所有正在运行的容器的列表 docker stop &lt;hash&gt; # 平稳地停止指定的容器 docker ps -a # 查看所有容器的列表，甚至包含未运行的容器 docker kill &lt;hash&gt; # 强制关闭指定的容器 docker rm &lt;hash&gt; # 从此机器中删除指定的容器 docker rm $(docker ps -a -q) # 从此机器中删除所有容器 docker images -a # 显示此机器上的所有镜像 docker rmi &lt;imagename&gt; # 从此机器中删除指定的镜像 docker rmi $(docker images -q) # 从此机器中删除所有镜像 docker login # 使用您的 Docker 凭证登录此 CLI 会话 docker tag &lt;image&gt; username/repository:tag # 标记 &lt;image&gt; 以上传到镜像库 docker push username/repository:tag # 将已标记的镜像上传到镜像库 docker run username/repository:tag # 运行镜像库中的镜像` docker logs 容器ID # 查看容器的日志 参考 docker官网 microsoft/aspnetcore dockerfile(主要来源) Using Supervisor with Docker Docker网络模型对比 Docker 常用指令详解 docker logs－查看docker容器日志 实时查看Docker容器占用的CPU，内存状态 如何编写最佳的Dockerfile]]></content>
       <categories>
         <category>docker</category>
       </categories>
@@ -227,7 +250,7 @@
   <entry>
     <title><![CDATA[csharp学习]]></title>
     <url>%2F2019%2F08%2F13%2Fcsharp%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[nuget库 使用Nexus搭建私有Nuget仓库linq .net framework下如何得到EF查询生成的SQL？C#语法 C#中为什么会出现空静态构造方法的写法 [C#] const vs. static readonly WinDbg分析高内存占用问题 .NET中的各种池 线程安全知多少 C#.net干货，最全公共帮助类ASP.NET Core ASP.NET Core 知多少系列：总体介绍及目录 ASP.NET 谨用 async/await ASP.NET Core JWT 认证.NET Core .NetCore利用BlockingCollection实现简易消息队列 从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储 利用Skywalking-netcore监控你的应用性能 .NET分布式框架 | Orleans 知多少 IdentityServer IdentityServer4 知多少 .net core项目实战汇总 第三方库 Polly 故障处理（一）： 重试策略 一个高性能的.NET序列化库：ZeroFormatter C# EF 批量操作 VS扩展插件-CodeMaid整洁你的代码 一个超轻量级工作流引擎：Workflow-Core RabbitMQ 使用EasyNetQ组件操作RabbitMQ消息队列服务 其他 Topshelf 秒建 Windows 服务 .NET Core容器化之多容器应用部署@Docker-Compose .NET Core + Consul 服务注册与发现 Orleans解决并发之痛（一）：单线程 00.AutoMapper 之入门指南(Getting Started Guide) C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦 OAuth2.0 知多少 ABP 源码解析 一. ABP启动 .NET:持续进化的统一开发平台 AspNetCore 限流中间件IpRateLimitMiddleware 介绍 AspNetCore 2.2 新特性—HealthCheck AspNetCore 2.2 新特性 – ProblemDetails 从壹开始微服务 [ DDD ] 之一 ║ D3模式设计初探 与 我的计划书 EF Core中避免贫血模型的三种行之有效的方法（翻译） DDD理论学习系列（1）– 通用语言 领域驱动设计到底难在哪？ 为什么DDD是设计微服务的最佳实践 DDD分层架构的三种模式 浅析DDD(领域驱动设计) 为什么DDD是设计微服务的最佳实践 ASP.NET CORE 增加日志到数据库或文件 如何为 .NET Core CLI 启用 TAB 自动补全功能 .NET运行时中的监测和可观测性 长期更新】迈向现代化的 .Net 配置指北 AspNetCore微服务下的网关-Kong(一) .Net Core 环境下构建强大且易用的规则引擎 [搬运] C# 这些年来受欢迎的特性 [周译见] C# 7 中的模范和实践 [翻译]在 .NET Core 中的并发编程 [翻译] 使用ElasticSearch，Kibana，ASP.NET Core和Docker可视化数据 .Net 4.X 提前用上 .Net Core 的配置模式以及热重载配置 [搬运]在C#使用.NET 设计模式的新观点 [搬运]在C#使用.NET 设计模式的新观点 在容器中利用Nginx-proxy实现多域名的自动反向代理、免费SSL证书 .NET Core开源组件:后台任务利器之Hangfire C# 中使用面向切面编程（AOP）中实践代码整洁 .NET Core + Consul 服务注册与发现 .Netcore 2.0 Ocelot Api网关教程（4）- 服务发现 收集一些优秀的DoNet开源项目 .NET 反编译调试神器：dnSpy了解一下 基于 EntityFramework 生成Repository模式代码 [翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志 多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？ (译)构建Async同步基元，Part 6 AsyncLock ==（译）关于async与await的FAQ== ASP.NET Core使用Jaeger实现分布式追踪 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM 高性能微服务网关.NETCore客户端Kong.Net开源发布 ==Asp.NETCore让FromServices回来-属性注入== 随笔分类 - .netcore ASP.NET Core官网 当前标签: surging-dotnet微服务系列 netcore+mysql+nginx+redis系列 .NET Core 迁移躺坑记 基于DDD的微服务设计和开发实战 ==.NET Core微服务系列基础文章索引（目录导航）== ASP.NET Core 基础知识(十二)【Host之通用主机】 .net core 网站如何附加到进程 C#中关于增强和丰富类功能的几种方式]]></content>
+    <content type="text"><![CDATA[nuget库 使用Nexus搭建私有Nuget仓库linq .net framework下如何得到EF查询生成的SQL？C#语法 C#中为什么会出现空静态构造方法的写法 [C#] const vs. static readonly WinDbg分析高内存占用问题 .NET中的各种池 线程安全知多少 C#.net干货，最全公共帮助类ASP.NET Core ASP.NET Core 知多少系列：总体介绍及目录 ASP.NET 谨用 async/await ASP.NET Core JWT 认证.NET Core .NetCore利用BlockingCollection实现简易消息队列 从壹开始前后端分离【 .NET Core2.0 Api + Vue 2.0 + AOP + 分布式】框架之六 || API项目整体搭建 6.1 仓储 利用Skywalking-netcore监控你的应用性能 .NET分布式框架 | Orleans 知多少 IdentityServer IdentityServer4 知多少 .net core项目实战汇总 第三方库 Polly 故障处理（一）： 重试策略 一个高性能的.NET序列化库：ZeroFormatter C# EF 批量操作 VS扩展插件-CodeMaid整洁你的代码 一个超轻量级工作流引擎：Workflow-Core RabbitMQ 使用EasyNetQ组件操作RabbitMQ消息队列服务 其他 Topshelf 秒建 Windows 服务 .NET Core容器化之多容器应用部署@Docker-Compose .NET Core + Consul 服务注册与发现 Orleans解决并发之痛（一）：单线程 00.AutoMapper 之入门指南(Getting Started Guide) C#程序员又新添帮手:能更方便的在浏览器上运行C#代码啦 OAuth2.0 知多少 ABP 源码解析 一. ABP启动 .NET:持续进化的统一开发平台 AspNetCore 限流中间件IpRateLimitMiddleware 介绍 AspNetCore 2.2 新特性—HealthCheck AspNetCore 2.2 新特性 – ProblemDetails 从壹开始微服务 [ DDD ] 之一 ║ D3模式设计初探 与 我的计划书 EF Core中避免贫血模型的三种行之有效的方法（翻译） DDD理论学习系列（1）– 通用语言 领域驱动设计到底难在哪？ 为什么DDD是设计微服务的最佳实践 DDD分层架构的三种模式 浅析DDD(领域驱动设计) 为什么DDD是设计微服务的最佳实践 ASP.NET CORE 增加日志到数据库或文件 如何为 .NET Core CLI 启用 TAB 自动补全功能 .NET运行时中的监测和可观测性 长期更新】迈向现代化的 .Net 配置指北 AspNetCore微服务下的网关-Kong(一) .Net Core 环境下构建强大且易用的规则引擎 [搬运] C# 这些年来受欢迎的特性 [周译见] C# 7 中的模范和实践 [翻译]在 .NET Core 中的并发编程 [翻译] 使用ElasticSearch，Kibana，ASP.NET Core和Docker可视化数据 .Net 4.X 提前用上 .Net Core 的配置模式以及热重载配置 [搬运]在C#使用.NET 设计模式的新观点 [搬运]在C#使用.NET 设计模式的新观点 在容器中利用Nginx-proxy实现多域名的自动反向代理、免费SSL证书 .NET Core开源组件:后台任务利器之Hangfire C# 中使用面向切面编程（AOP）中实践代码整洁 .NET Core + Consul 服务注册与发现 .Netcore 2.0 Ocelot Api网关教程（4）- 服务发现 收集一些优秀的DoNet开源项目 .NET 反编译调试神器：dnSpy了解一下 基于 EntityFramework 生成Repository模式代码 [翻译] ASP.NET Core 利用 Docker、ElasticSearch、Kibana 来记录日志 多线程同步锁，选lock、Monitor、Mutex、Semaphore还是SemaphoreSlim？ (译)构建Async同步基元，Part 6 AsyncLock （译）关于async与await的FAQ ASP.NET Core使用Jaeger实现分布式追踪 基于 Docker Compose 实践 .NET Core 的现代化架构 2：在容器中集成 Skywalking APM 高性能微服务网关.NETCore客户端Kong.Net开源发布 Asp.NETCore让FromServices回来-属性注入 随笔分类 - .netcore ASP.NET Core官网 当前标签: surging-dotnet微服务系列 netcore+mysql+nginx+redis系列 .NET Core 迁移躺坑记 基于DDD的微服务设计和开发实战 .NET Core微服务系列基础文章索引（目录导航） ASP.NET Core 基础知识(十二)【Host之通用主机】 .net core 网站如何附加到进程 C#中关于增强和丰富类功能的几种方式]]></content>
       <categories>
         <category>C#</category>
       </categories>
@@ -260,7 +283,7 @@
   <entry>
     <title><![CDATA[download]]></title>
     <url>%2F2019%2F08%2F13%2Fdownload%2F</url>
-    <content type="text"><![CDATA[脚本 linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell-dotnet发布脚本 jmeter jmeter-性能测试ignore vs.gitignore排除文件 gitlab CI/CD gitlab-ci自动构造 Docker镜像]]></content>
+    <content type="text"><![CDATA[脚本 linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell-dotnet发布脚本 jmeter jmeter-性能测试ignore vs.gitignore排除文件 gitlab CI/CD gitlab-ci自动构造 Docker镜像 python 天猫价格爬取并截图 Dotnet Core百度云盘-sourcecode-CSharp爬虫并截图.7z]]></content>
       <tags>
         <tag>download</tag>
       </tags>
