@@ -26,7 +26,7 @@
   <entry>
     <title><![CDATA[supervisor]]></title>
     <url>%2F2019%2F08%2F14%2Fsupervisor%2F</url>
-    <content type="text"><![CDATA[supervisor安装12yum install python-setuptools easy_install supervisor supervisor守护go,conf文件12345678910111213[program:golang-http-server]command=/home/golang/simple_http_serverautostart=trueautorestart=truestartsecs=10stdout_logfile=/var/log/simple_http_server.logstdout_logfile_maxbytes=1MBstdout_logfile_backups=10stdout_capture_maxbytes=1MBstderr_logfile=/var/log/simple_http_server.logstderr_logfile_maxbytes=1MBstderr_logfile_backups=10stderr_capture_maxbytes=1MB 配置说明: - command：表示运行的命令，填入完整的路径即可 - autostart：表示是否跟随supervisor一起启动。 - autorestart：如果该程序挂了，是否重新启动。 - stdout_logfile：终端标准输出重定向文件。 - stderr_logfile：终端错误输出重定向文件。 参考Linux Supervisor的安装与使用入门]]></content>
+    <content type="text"><![CDATA[supervisor安装12yum install python-setuptools easy_install supervisor supervisor守护go,conf文件12345678910111213[program:golang-http-server]command=/home/golang/simple_http_serverautostart=trueautorestart=truestartsecs=10stdout_logfile=/var/log/simple_http_server.logstdout_logfile_maxbytes=1MBstdout_logfile_backups=10stdout_capture_maxbytes=1MBstderr_logfile=/var/log/simple_http_server.logstderr_logfile_maxbytes=1MBstderr_logfile_backups=10stderr_capture_maxbytes=1MB 配置说明: - command：表示运行的命令，填入完整的路径即可 - autostart：表示是否跟随supervisor一起启动。 - autorestart：如果该程序挂了，是否重新启动。 - stdout_logfile：终端标准输出重定向文件。 - stderr_logfile：终端错误输出重定向文件。 参考Linux Supervisor的安装与使用入门Supervisor官网]]></content>
       <tags>
         <tag>supervisor</tag>
       </tags>
@@ -283,7 +283,7 @@
   <entry>
     <title><![CDATA[download]]></title>
     <url>%2F2019%2F08%2F13%2Fdownload%2F</url>
-    <content type="text"><![CDATA[脚本 linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell-dotnet发布脚本 jmeter jmeter-性能测试ignore vs.gitignore排除文件 gitlab CI/CD gitlab-ci自动构造 Docker镜像 python 天猫价格爬取并截图 Dotnet Core百度云盘-sourcecode-CSharp爬虫并截图.7z]]></content>
+    <content type="text"><![CDATA[脚本 linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell -ssh-dotnet发布脚本 jmeter jmeter-性能测试ignore vs.gitignore排除文件 gitlab CI/CD gitlab-ci自动构造 Docker镜像 python 天猫价格爬取并截图 Dotnet Core百度云盘-sourcecode-CSharp爬虫并截图.7z]]></content>
       <tags>
         <tag>download</tag>
       </tags>
@@ -291,7 +291,7 @@
   <entry>
     <title><![CDATA[powershell学习.md]]></title>
     <url>%2F2019%2F07%2F30%2Fpowershell%2F</url>
-    <content type="text"><![CDATA[powershell Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
+    <content type="text"><![CDATA[powershell远程sshlinux 命令 sudo service sshd restart不支持ssh 问题 ssh免密码登录全过程 sudo: no tty present and no askpass program specified 解决方法 sudo: no tty present and no askpass program specified 解决方法 sudo: no tty present and no askpass program specified Trying to do ssh authentication with key files: server refused our key putty 连接服务器 server refused our key 参考 Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
       <categories>
         <category>powershell</category>
       </categories>

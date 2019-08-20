@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="LTO">
 <meta property="og:description" content="supervisor安装12yum install python-setuptools  easy_install supervisor">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-14T11:52:16.071Z">
+<meta property="og:updated_time" content="2019-08-20T07:23:19.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="supervisor">
 <meta name="twitter:description" content="supervisor安装12yum install python-setuptools  easy_install supervisor">
@@ -342,8 +342,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-14T19:52:16+08:00">
-                2019-08-14
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-20T15:23:19+08:00">
+                2019-08-20
               </time>
             
           </span>
@@ -413,7 +413,7 @@
 <h4 id="supervisor守护go-conf文件"><a href="#supervisor守护go-conf文件" class="headerlink" title="supervisor守护go,conf文件"></a>supervisor守护go,conf文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[program:golang-http-server]</span><br><span class="line">command=/home/golang/simple_http_server</span><br><span class="line">autostart=true</span><br><span class="line">autorestart=true</span><br><span class="line">startsecs=10</span><br><span class="line">stdout_logfile=/var/log/simple_http_server.log</span><br><span class="line">stdout_logfile_maxbytes=1MB</span><br><span class="line">stdout_logfile_backups=10</span><br><span class="line">stdout_capture_maxbytes=1MB</span><br><span class="line">stderr_logfile=/var/log/simple_http_server.log</span><br><span class="line">stderr_logfile_maxbytes=1MB</span><br><span class="line">stderr_logfile_backups=10</span><br><span class="line">stderr_capture_maxbytes=1MB</span><br></pre></td></tr></table></figure>
 
 <p>配置说明:<br>    - command：表示运行的命令，填入完整的路径即可<br>    - autostart：表示是否跟随supervisor一起启动。<br>    - autorestart：如果该程序挂了，是否重新启动。<br>    - stdout_logfile：终端标准输出重定向文件。<br>    - stderr_logfile：终端错误输出重定向文件。</p>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://www.cnblogs.com/Hai--D/p/5820718.html" target="_blank" rel="noopener">Linux Supervisor的安装与使用入门</a></p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://www.cnblogs.com/Hai--D/p/5820718.html" target="_blank" rel="noopener">Linux Supervisor的安装与使用入门</a><br><a href="http://supervisord.org/index.html" target="_blank" rel="noopener">Supervisor官网</a></p>
 
       
     </div>
