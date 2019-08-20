@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[shell]]></title>
+    <url>%2F2019%2F08%2F20%2Fshell%2F</url>
+    <content type="text"><![CDATA[参考10分钟入门Shell脚本编程]]></content>
+      <categories>
+        <category>shell</category>
+      </categories>
+      <tags>
+        <tag>shell</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[k8s]]></title>
     <url>%2F2019%2F08%2F19%2Fk8s%2F</url>
     <content type="text"><![CDATA[10分钟看懂Docker和K8S]]></content>
@@ -114,8 +125,8 @@
         <category>vue</category>
       </categories>
       <tags>
-        <tag>webpack</tag>
         <tag>vue</tag>
+        <tag>webpack</tag>
       </tags>
   </entry>
   <entry>
@@ -283,7 +294,7 @@
   <entry>
     <title><![CDATA[download]]></title>
     <url>%2F2019%2F08%2F13%2Fdownload%2F</url>
-    <content type="text"><![CDATA[脚本 linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell -ssh-dotnet发布脚本 jmeter jmeter-性能测试ignore vs.gitignore排除文件 gitlab CI/CD gitlab-ci自动构造 Docker镜像 python 天猫价格爬取并截图 Dotnet Core百度云盘-sourcecode-CSharp爬虫并截图.7z]]></content>
+    <content type="text"><![CDATA[脚本 linux-清理文件shell脚本 linux-dotnet发布shell脚本 powershell -ssh-dotnet发布脚本 jmeter jmeter-性能测试ignore vs.gitignore排除文件 gitlab CI/CD gitlab-ci自动构造 Docker镜像 python 天猫价格爬取并截图 Dotnet Core百度云盘-sourcecode-CSharp爬虫并截图.7z Pdf Go语言实战 深入Python3 C#并发编程经典实例 python最佳实践]]></content>
       <tags>
         <tag>download</tag>
       </tags>
