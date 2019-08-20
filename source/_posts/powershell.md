@@ -6,7 +6,19 @@ tags:
 categories:
  - powershell
 ---
-#### powershell
+#### powershell远程sshlinux
+- 命令
+    - sudo service sshd restart`不支持ssh`
+    
+- 问题
+    - [ssh免密码登录全过程](https://blog.csdn.net/zengqiang1/article/details/52997885)
+    - sudo: no tty present and no askpass program specified 解决方法
+        - [sudo: no tty present and no askpass program specified 解决方法](https://blog.csdn.net/gezehao/article/details/47317103)
+        - [sudo: no tty present and no askpass program specified](https://blog.csdn.net/ksksjipeng/article/details/75267153)
+    - [Trying to do ssh authentication with key files: server refused our key](https://askubuntu.com/questions/306798/trying-to-do-ssh-authentication-with-key-files-server-refused-our-key)
+    - [putty 连接服务器 server refused our key](https://blog.csdn.net/weixin_40322495/article/details/81184227)
+  
+#### 参考
 - [Powershell快速入门（一） 安装和使用](https://www.jianshu.com/p/c8f5c374466a?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [Windows 终端美化，改造 PowerShell 的外观](https://www.jianshu.com/p/e4d71022ee48?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)
 - [Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由](https://www.jianshu.com/p/931ae4c34120?utm_campaign=hugo&utm_medium=reader_share&utm_content=note&utm_source=weixin-friends)

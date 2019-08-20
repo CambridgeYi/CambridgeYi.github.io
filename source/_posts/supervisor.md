@@ -33,3 +33,4 @@ tags: supervisor
     - stderr_logfile：终端错误输出重定向文件。
 #### 参考
 [Linux Supervisor的安装与使用入门](https://www.cnblogs.com/Hai--D/p/5820718.html)
+[Supervisor官网](http://supervisord.org/index.html)

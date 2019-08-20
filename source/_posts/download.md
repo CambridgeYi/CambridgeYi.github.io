@@ -7,7 +7,7 @@ tags: download
 #### 脚本
 - [linux-清理文件shell脚本](/download/clear.sh)  
 - [linux-dotnet发布shell脚本](/download/webapi_bak.sh)  
-- [powershell-dotnet发布脚本](/download/webapi_publish_60.ps1)
+- [powershell -ssh-dotnet发布脚本](/download/webapi_publish_plink_ful.ps1)
 
 <!--more-->
 #### jmeter  
