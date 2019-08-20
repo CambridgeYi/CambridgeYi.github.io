@@ -24,3 +24,9 @@ tags: download
 
 #### Dotnet Core
 百度云盘-sourcecode-CSharp爬虫并截图.7z
+
+#### Pdf
+- [Go语言实战](/download/Go.pdf)
+- [深入Python3](/download/Python3.pdf)
+- [C#并发编程经典实例](/download/Csharp.pdf)
+- [python最佳实践](/download/python.pdf)

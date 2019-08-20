@@ -5,6 +5,10 @@ tags: netcore
 categories: netcore
 ---
 #### DotNet.Core
+- 生产环境中dump出进程快照文件，通过分析快照堆栈、线程信息、异常信息判断运行状态
+    - [生产环境(基于docker)故障排除？](https://www.cnblogs.com/JulianHuang/p/11365593.html) 
+    - [dotnet core调试docker下生成的dump文件](https://www.cnblogs.com/iamsach/p/10118628.html)
+    - [Windbg程序调试系列-索引篇](https://www.cnblogs.com/tianqing/p/11307049.html)
 - dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）
 > 修改端口可以通过添加参数 --server.urls即dotnet xx.dll --server.urls=http://*.端口号
 可以修改端口
