@@ -313,7 +313,7 @@
   <entry>
     <title><![CDATA[powershell学习.md]]></title>
     <url>%2F2019%2F07%2F30%2Fpowershell%2F</url>
-    <content type="text"><![CDATA[powershell远程sshlinux 命令 sudo service sshd restart不支持ssh 问题 ssh免密码登录全过程 sudo: no tty present and no askpass program specified 解决方法 sudo: no tty present and no askpass program specified 解决方法 sudo: no tty present and no askpass program specified Trying to do ssh authentication with key files: server refused our key putty 连接服务器 server refused our key 参考 Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
+    <content type="text"><![CDATA[新建utf-8文件使用如下命令我们就可以得到一个UTF-8编码的空文件 1&quot;&quot; | Out-File -Encoding utf8 d:\2.txt powershell远程sshlinux 命令 sudo service sshd restart不支持ssh 问题 ssh免密码登录全过程 sudo: no tty present and no askpass program specified 解决方法 sudo: no tty present and no askpass program specified 解决方法 sudo: no tty present and no askpass program specified Trying to do ssh authentication with key files: server refused our key putty 连接服务器 server refused our key 参考 PowerShell创建一个utf-8编码的文件 Powershell快速入门（一） 安装和使用 Windows 终端美化，改造 PowerShell 的外观 Windows平台的开发者们，是时候抛弃 cmd 了！你应该选择 Powershell 的10个理由 windows控制台主题美化工具-colortool ==windows与Linux间远程拷贝文件-pscp命令== PowerShell官网]]></content>
       <categories>
         <category>powershell</category>
       </categories>
