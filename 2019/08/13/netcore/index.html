@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="DotNet.Core dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）  修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号可以修改端口   http响应乱码情况分析  ==编码格式有问题== ==响应数据加密（通过fiddler 可查看是">
+<meta name="description" content="DotNet.Core 生产环境中dump出进程快照文件，通过分析快照堆栈、线程信息、异常信息判断运行状态  生产环境(基于docker)故障排除？  dotnet core调试docker下生成的dump文件 Windbg程序调试系列-索引篇   dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）  修改端口可以通过添加">
 <meta name="keywords" content="netcore">
 <meta property="og:type" content="article">
 <meta property="og:title" content="netcore">
 <meta property="og:url" content="http://yoursite.com/2019/08/13/netcore/index.html">
 <meta property="og:site_name" content="LTO">
-<meta property="og:description" content="DotNet.Core dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）  修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号可以修改端口   http响应乱码情况分析  ==编码格式有问题== ==响应数据加密（通过fiddler 可查看是">
+<meta property="og:description" content="DotNet.Core 生产环境中dump出进程快照文件，通过分析快照堆栈、线程信息、异常信息判断运行状态  生产环境(基于docker)故障排除？  dotnet core调试docker下生成的dump文件 Windbg程序调试系列-索引篇   dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）  修改端口可以通过添加">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-14T12:05:40.974Z">
+<meta property="og:updated_time" content="2019-08-21T01:09:04.729Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="netcore">
-<meta name="twitter:description" content="DotNet.Core dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）  修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号可以修改端口   http响应乱码情况分析  ==编码格式有问题== ==响应数据加密（通过fiddler 可查看是">
+<meta name="twitter:description" content="DotNet.Core 生产环境中dump出进程快照文件，通过分析快照堆栈、线程信息、异常信息判断运行状态  生产环境(基于docker)故障排除？  dotnet core调试docker下生成的dump文件 Windbg程序调试系列-索引篇   dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）  修改端口可以通过添加">
 
 
 
@@ -342,8 +342,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-14T20:05:40+08:00">
-                2019-08-14
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-21T09:09:04+08:00">
+                2019-08-21
               </time>
             
           </span>
@@ -430,6 +430,13 @@
 
       
         <h4 id="DotNet-Core"><a href="#DotNet-Core" class="headerlink" title="DotNet.Core"></a>DotNet.Core</h4><ul>
+<li><p>生产环境中dump出进程快照文件，通过分析快照堆栈、线程信息、异常信息判断运行状态</p>
+<ul>
+<li><a href="https://www.cnblogs.com/JulianHuang/p/11365593.html" target="_blank" rel="noopener">生产环境(基于docker)故障排除？</a> </li>
+<li><a href="https://www.cnblogs.com/iamsach/p/10118628.html" target="_blank" rel="noopener">dotnet core调试docker下生成的dump文件</a></li>
+<li><a href="https://www.cnblogs.com/tianqing/p/11307049.html" target="_blank" rel="noopener">Windbg程序调试系列-索引篇</a></li>
+</ul>
+</li>
 <li><p>dotnet 命令启动始终是默认端口5000 （说是release可以修改端口,实测无效,指定hosting.json也无效）</p>
 <blockquote>
 <p>修改端口可以通过添加参数 –server.urls即dotnet xx.dll –server.urls=http://*.端口号<br>可以修改端口</p>
@@ -613,7 +620,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -624,7 +631,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -635,7 +642,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
