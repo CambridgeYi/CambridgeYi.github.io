@@ -5,6 +5,8 @@ tags: ASP.NET Core
 categories: ASP.NET Core
 ---
 #### netcore学习
+- [Using MediatR in ASPNET Core Apps](https://ardalis.com/using-mediatr-in-aspnet-core-apps)
+- [处理ASP.NET Core Web API的验证响应](https://www.jerriepelser.com/blog/validation-response-aspnet-core-webapi/)
 - [***Introducing diagnostics improvements in .NET Core 3.0***](https://devblogs.microsoft.com/dotnet/introducing-diagnostics-improvements-in-net-core-3-0/)
 - [使用dotnet-dump 查找 .net core 3.0 占用CPU 100%的原因](https://www.cnblogs.com/zhouandke/p/11070114.html)
 - [==ENode 2.8 最新架构图简介==](https://www.cnblogs.com/netfocus/p/5401179.html)

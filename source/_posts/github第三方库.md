@@ -21,6 +21,9 @@ categories: github
 |[RabbitMQ.Client](https://www.rabbitmq.com/dotnet.html)|The RabbitMQ .NET client is an implementation of an AMQP 0-9-1 client library for C# (and, implicitly, other .NET languages).|
 |[WebApiClient.JIT](https://github.com/dotnetcore/WebApiClient)|An open source project based on the HttpClient. You only need to define the c# interface and modify the related features to invoke the client library of the remote http interface asynchronously.|
 |[AngleSharp](https://github.com/AngleSharp/AngleSharp)|The ultimate angle brackets parser library parsing HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specifications|
+|[Fody](https://github.com/Fody/Fody)|Extensible tool for weaving .net assemblies|
+|[DotNetty](https://github.com/Azure/DotNetty)|DotNetty project – a port of netty, event-driven asynchronous network application framework|
+|[AspNetCoreRateLimit](https://github.com/stefanprodan/AspNetCoreRateLimit)|ASP.NET Core rate limiting middleware|
 
 <!--more-->
 
