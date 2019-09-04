@@ -5,6 +5,8 @@ tags: ASP.NET Core
 categories: ASP.NET Core
 ---
 #### netcore学习
+- [**.NET Core 学习资料精选：入门**](https://www.cnblogs.com/heyuquan/p/dotnet-basic-learning-resource.html)
+- [**.NET Core 学习资料精选：进阶**](https://www.cnblogs.com/heyuquan/p/dotnet-advance-learning-resource.html)
 - [Using MediatR in ASPNET Core Apps](https://ardalis.com/using-mediatr-in-aspnet-core-apps)
 - [处理ASP.NET Core Web API的验证响应](https://www.jerriepelser.com/blog/validation-response-aspnet-core-webapi/)
 - [***Introducing diagnostics improvements in .NET Core 3.0***](https://devblogs.microsoft.com/dotnet/introducing-diagnostics-improvements-in-net-core-3-0/)
